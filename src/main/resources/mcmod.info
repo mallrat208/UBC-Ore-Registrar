@@ -1,0 +1,16 @@
+[
+{
+  "modid": "UBCOres",
+  "name": "UBC Ore Registrar",
+  "description": "A Small Add-on mod for Underground Biome Construct to register other mods Ores for UB-ification",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["mallrat208"],
+  "credits": "Ah... people?",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
