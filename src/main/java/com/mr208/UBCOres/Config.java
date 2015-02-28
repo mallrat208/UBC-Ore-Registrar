@@ -23,6 +23,8 @@ public class Config {
     public static boolean TFOres;
     public static boolean ThaumOres;
     public static boolean AE2Ores;
+    public static boolean magCropOre;
+    public static boolean ProjRedOres;
 
     public static void init(File configFile)
     {
@@ -48,7 +50,8 @@ public class Config {
         TFOres = config.getBoolean("12) Enable Thermal Foundation Support", "Mod Support", true, "Enable this to hsve Copper, Tin, Silver, Lead, Ferrous, Shiny, and Mana Infused Ore spawn with UB Textures. ");
         ThaumOres = config.getBoolean("13) Enable Thaumcraft Support", "Mod Support", true, "Enable this to have Cinnibar, Amber, and Infused Stone spawn with UB Textures.");
         AE2Ores = config.getBoolean("14) Enable Applied Energistics 2 Support", "Mod Support", true, "Enable this to have Certus Quartz and Charged Certus Quartz spawn with UB Textures. Note, Charged Quartz will not have a particle effect");
-
+        magCropOre = config.getBoolean("15) Enable Magical Crops Support", "Mod Support", true, "Enable to have Essence Ore spawn with UB Textures. Ore will not have particle effects");
+        ProjRedOres = config.getBoolean("16) Enable Project Red Support", "Mod Support", true, "Enable this to have Ruby, Sapphire, and Peridot spawn with UB Textures.");
         if (config.hasChanged())
         {
             config.save();

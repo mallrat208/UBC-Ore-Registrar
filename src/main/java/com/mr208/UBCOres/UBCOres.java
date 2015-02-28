@@ -2,6 +2,7 @@ package com.mr208.UBCOres;
 
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import com.mr208.UBCOres.Mods.*;
 
@@ -32,5 +33,12 @@ public static UBCOres instance;
         if(Loader.isModLoaded("IC2") & Config.IC2Ores) IndustrialCraft.preInit(event);
         if(Loader.isModLoaded("appliedenergistics2") & Config.AE2Ores) AE2.preInit(event);
 
+    }
+
+    @Mod.EventHandler
+    public void Init(FMLInitializationEvent event)
+    {
+        if(Loader.isModLoaded("magicalcrops") & Config.magCropOre) MagicalCrops.Init();
+        if(Loader.isModLoaded("ProjRed|Exploration") & Config.ProjRedOres) ProjRed.init();
     }
 }
