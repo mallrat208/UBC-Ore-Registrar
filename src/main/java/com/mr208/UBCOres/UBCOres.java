@@ -4,7 +4,6 @@ import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import com.mr208.UBCOres.Mods.*;
 
 @Mod(modid=References.MODID, name=References.MODNAME, dependencies = References.DEPENDENCIES, version = References.VERSION)
 public class UBCOres {
@@ -19,26 +18,26 @@ public static UBCOres instance;
         Config.init(event.getSuggestedConfigurationFile());
 
 
-        if(Loader.isModLoaded("factorization") & Config.FZOres) Factorization.preInit(event);
-        if(Loader.isModLoaded("Thaumcraft") & Config.ThaumOres) Thaumcraft.preInit(event);
-        if(Loader.isModLoaded("steamcraft2") & Config.Steam2Ores) Steamcraft2.preInit(event);
-        if(Loader.isModLoaded("BiomesOPlenty") & Config.BOPOre) BiomesOPlenty.preInit(event);
-        if(Loader.isModLoaded("ThermalFoundation") & Config.TFOres) TFoundation.preInit(event);
-        if(Loader.isModLoaded("harvestcraft") & Config.HarvestOres) Harvestcraft.preInit(event);
-        if(Loader.isModLoaded("Railcraft") & Config.RailOres) Railcraft.preInit(event);
-        if(Loader.isModLoaded("Steamcraft")& Config.FSPOres) FSP.preInit(event);
-        if(Loader.isModLoaded("BigReactors") & Config.BROre) BigReactors.preInit(event);
-        if(Loader.isModLoaded("farlanders") & Config.FarOres) Farlanders.preInit(event);
-        if(Loader.isModLoaded("Mekanism") & Config.MekOres) Mekanism.preInit(event);
-        if(Loader.isModLoaded("IC2") & Config.IC2Ores) IndustrialCraft.preInit(event);
-        if(Loader.isModLoaded("appliedenergistics2") & Config.AE2Ores) AE2.preInit(event);
+        if(Loader.isModLoaded("factorization") & Config.FZOres) Mods.Factorization(event);
+        if(Loader.isModLoaded("Thaumcraft") & Config.ThaumOres) Mods.Thaumcraft(event);
+        if(Loader.isModLoaded("steamcraft2") & Config.Steam2Ores) Mods.Steamcraft2(event);
+        if(Loader.isModLoaded("BiomesOPlenty") & Config.BOPOre) Mods.BOP(event);
+        if(Loader.isModLoaded("ThermalFoundation") & Config.TFOres) Mods.ThermalFoundation(event);
+        if(Loader.isModLoaded("harvestcraft") & Config.HarvestOres) Mods.Harvestcraft(event);
+        if(Loader.isModLoaded("Railcraft") & Config.RailOres) Mods.Railcraft(event);
+        if(Loader.isModLoaded("Steamcraft")& Config.FSPOres) Mods.FlaxSteampower(event);
+        if(Loader.isModLoaded("BigReactors") & Config.BROre) Mods.BigReactors(event);
+        if(Loader.isModLoaded("farlanders") & Config.FarOres) Mods.Farlanders(event);
+        if(Loader.isModLoaded("Mekanism") & Config.MekOres) Mods.Mekanism(event);
+        if(Loader.isModLoaded("IC2") & Config.IC2Ores) Mods.IC2(event);
+        if(Loader.isModLoaded("appliedenergistics2") & Config.AE2Ores) Mods.AE2(event);
 
     }
 
     @Mod.EventHandler
     public void Init(FMLInitializationEvent event)
     {
-        if(Loader.isModLoaded("magicalcrops") & Config.magCropOre) MagicalCrops.Init();
-        if(Loader.isModLoaded("ProjRed|Exploration") & Config.ProjRedOres) ProjRed.init();
+        if(Loader.isModLoaded("magicalcrops") & Config.magCropOre) Mods.MagicalCrops(null);
+        if(Loader.isModLoaded("ProjRed|Exploration") & Config.ProjRedOres) Mods.ProjectRed(null);
     }
 }
