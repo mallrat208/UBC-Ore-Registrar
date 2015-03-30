@@ -99,7 +99,7 @@ public class Mods {
         UBCHelper.registerModOresWithMeta("Thaumcraft","blockCustomOre",0,1,NAMES,event);
     }
 
-
+	public static void Forestry(FMLPreInitializationEvent event)
 	{
 		String[] NAMES = {"apatite","copper","tin"};
 		UBCHelper.registerModOresWithMeta("Forestry","resources",0,1,NAMES,event);
