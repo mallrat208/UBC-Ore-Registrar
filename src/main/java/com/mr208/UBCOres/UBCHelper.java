@@ -20,7 +20,7 @@ public class UBCHelper {
     {
         ItemStack placeholder = new ItemStack(  block, 1, meta);
         try {
-            UBAPIHook.ubAPIHook.ubOreTexturizer.setupUBOre(block, meta, modname + ":" + texturename, "ore" + name, event);
+            UBAPIHook.ubAPIHook.ubOreTexturizer.setupUBOre(block, meta, modname + ":" + texturename, "ore." + name, event);
         } catch (Exception e) {
             if (e instanceof UBOreTexturizer.BlocksAreAlreadySet)
                 Log.error(placeholder.getDisplayName() + " is already registered with UBC. Skipping");

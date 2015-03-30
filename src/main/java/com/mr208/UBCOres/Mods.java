@@ -60,15 +60,13 @@ public class Mods {
     public static void MagicalCrops(FMLPreInitializationEvent event)
     {
         Block magCropOre = GameRegistry.findBlock("magicalcrops","magicalcrops_EssenceOre");
-        //So, as it turns out you can pass a null object for the event. Seeing as it isn't used...
-        // This works for now and is simple.
         UBCHelper.registerOreBlock(magCropOre, 0, "magicalcrops", "EssenceOre_layer", "mcEssenceOre", null);
     }
 
     public static void Mekanism(FMLPreInitializationEvent event)
     {
-    String[] NAMES = {"osmium","copper","tin"};
-    UBCHelper.registerModOresWithMeta("Mekanism","OreBlock",0,1,NAMES,event);
+    	String[] NAMES = {"osmium","copper","tin"};
+    	UBCHelper.registerModOresWithMeta("Mekanism","OreBlock",0,1,NAMES,event);
     }
 
     public static void ProjectRed(FMLPreInitializationEvent event)
@@ -102,5 +100,8 @@ public class Mods {
     }
 
 
-
+	{
+		String[] NAMES = {"apatite","copper","tin"};
+		UBCHelper.registerModOresWithMeta("Forestry","resources",0,1,NAMES,event);
+	}
 }
