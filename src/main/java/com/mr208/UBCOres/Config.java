@@ -53,7 +53,7 @@ public class Config {
         AE2Ores = config.getBoolean("14) Enable Applied Energistics 2 Support", "Mod Support", true, "Enable this to have Certus Quartz and Charged Certus Quartz spawn with UB Textures. Note, Charged Quartz will not have a particle effect");
         magCropOre = config.getBoolean("15) Enable Magical Crops Support", "Mod Support", true, "Enable to have Essence Ore spawn with UB Textures. Ore will not have particle effects");
         ProjRedOres = config.getBoolean("16) Enable Project Red Support", "Mod Support", true, "Enable this to have Ruby, Sapphire, and Peridot spawn with UB Textures.");
-		ForOres = config.getBoolean("17) Enable Forestry Support","Mod Support", false, "Enable this to have Apatite, Copper and Tin spawn with UB Textures.");
+		ForOres = config.getBoolean("17) Enable Forestry Support","Mod Support", true, "Enable this to have Apatite, Copper and Tin spawn with UB Textures.");
 
         if (config.hasChanged())
         {
