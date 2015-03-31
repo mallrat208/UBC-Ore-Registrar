@@ -18,21 +18,20 @@ public static UBCOres instance;
         Config.init(event.getSuggestedConfigurationFile());
 
 
-        if(Loader.isModLoaded("factorization") & Config.FZOres) Mods.Factorization(event);
-        if(Loader.isModLoaded("Thaumcraft") & Config.ThaumOres) Mods.Thaumcraft(event);
-        if(Loader.isModLoaded("steamcraft2") & Config.Steam2Ores) Mods.Steamcraft2(event);
-        if(Loader.isModLoaded("BiomesOPlenty") & Config.BOPOre) Mods.BOP(event);
-        if(Loader.isModLoaded("ThermalFoundation") & Config.TFOres) Mods.ThermalFoundation(event);
-        if(Loader.isModLoaded("harvestcraft") & Config.HarvestOres) Mods.Harvestcraft(event);
-        if(Loader.isModLoaded("Railcraft") & Config.RailOres) Mods.Railcraft(event);
-        if(Loader.isModLoaded("Steamcraft")& Config.FSPOres) Mods.FlaxSteampower(event);
-        if(Loader.isModLoaded("BigReactors") & Config.BROre) Mods.BigReactors(event);
-        if(Loader.isModLoaded("farlanders") & Config.FarOres) Mods.Farlanders(event);
-        if(Loader.isModLoaded("Mekanism") & Config.MekOres) Mods.Mekanism(event);
-        if(Loader.isModLoaded("IC2") & Config.IC2Ores) Mods.IC2(event);
-        if(Loader.isModLoaded("appliedenergistics2") & Config.AE2Ores) Mods.AE2(event);
-		if(Loader.isModLoaded("Forestry") & Config.ForOres) Mods.Forestry(event);
-		if(Loader.isModLoaded("TConstruct") && Config.TinkOres) Mods.TConstruct(event);
+        if(Config.FZOres && Loader.isModLoaded("factorization")) Mods.Factorization(event);
+        if(Config.ThaumOres && Loader.isModLoaded("Thaumcraft")) Mods.Thaumcraft(event);
+        if(Config.Steam2Ores && Loader.isModLoaded("steamcraft2")) Mods.Steamcraft2(event);
+        if(Config.TFOres && Loader.isModLoaded("ThermalFoundation")) Mods.ThermalFoundation(event);
+        if(Config.HarvestOres && Loader.isModLoaded("harvestcraft")) Mods.Harvestcraft(event);
+        if(Config.RailOres && Loader.isModLoaded("Railcraft")) Mods.Railcraft(event);
+        if(Config.FSPOres && Loader.isModLoaded("Steamcraft")) Mods.FlaxSteampower(event);
+        if(Config.BROre && Loader.isModLoaded("BigReactors")) Mods.BigReactors(event);
+        if(Config.FarOres && Loader.isModLoaded("farlanders")) Mods.Farlanders(event);
+        if(Config.MekOres && Loader.isModLoaded("Mekanism")) Mods.Mekanism(event);
+        if(Config.IC2Ores && Loader.isModLoaded("IC2")) Mods.IC2(event);
+        if(Config.AE2Ores && Loader.isModLoaded("appliedenergistics2")) Mods.AE2(event);
+		if(Config.ForOres && Loader.isModLoaded("Forestry")) Mods.Forestry(event);
+		if(Config.TinkOres && Loader.isModLoaded("TConstruct")) Mods.TConstruct(event);
 
     }
 
