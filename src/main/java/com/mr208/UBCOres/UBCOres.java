@@ -32,6 +32,7 @@ public static UBCOres instance;
         if(Loader.isModLoaded("IC2") & Config.IC2Ores) Mods.IC2(event);
         if(Loader.isModLoaded("appliedenergistics2") & Config.AE2Ores) Mods.AE2(event);
 		if(Loader.isModLoaded("Forestry") & Config.ForOres) Mods.Forestry(event);
+		if(Loader.isModLoaded("TConstruct") && Config.TinkOres) Mods.TConstruct(event);
 
     }
 

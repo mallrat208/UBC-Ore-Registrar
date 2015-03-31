@@ -104,4 +104,10 @@ public class Mods {
 		String[] NAMES = {"apatite","copper","tin"};
 		UBCHelper.registerModOresWithMeta("Forestry","resources",0,1,NAMES,event);
 	}
+
+	public static void TConstruct(FMLPreInitializationEvent event)
+	{
+		String[] NAMES = {"copper","tin","aluminum"};
+		UBCHelper.registerModOresWithMeta("TConstruct","SearedBrick",3,1,NAMES,event);
+	}
 }
