@@ -105,9 +105,17 @@ public class Mods {
 		UBCHelper.registerModOresWithMeta("Forestry","resources",0,1,NAMES,event);
 	}
 
-	public static void TConstruct(FMLPreInitializationEvent event)
+	/*public static void TConstruct(FMLPreInitializationEvent event)
 	{
 		String[] NAMES = {"copper","tin","aluminum"};
 		UBCHelper.registerModOresWithMeta("TConstruct","SearedBrick",3,1,NAMES,event);
+	}*/
+
+	public static void BluePower(FMLPreInitializationEvent event)
+	{
+		String[] BLOCKS = {"teslatite_ore","copper_ore","silver_ore","zinc_ore","tungsten_ore","ruby_ore","sapphire_ore","amethyst_ore"};
+		String[] NAMES = {"teslatite","copper","silver","zinc", "tungsten","ruby","sapphire","amethyst"};
+		UBCHelper.registerModOresWithoutMeta("bluepower",BLOCKS,NAMES,event);
 	}
+
 }

@@ -32,14 +32,15 @@ public static UBCOres instance;
         if(Config.IC2Ores && Loader.isModLoaded("IC2")) Mods.IC2(event);
         if(Config.AE2Ores && Loader.isModLoaded("appliedenergistics2")) Mods.AE2(event);
 		if(Config.ForOres && Loader.isModLoaded("Forestry")) Mods.Forestry(event);
-		if(Config.TinkOres && Loader.isModLoaded("TConstruct")) Mods.TConstruct(event);
+		//if(Config.TinkOres && Loader.isModLoaded("TConstruct")) Mods.TConstruct(event);
 
     }
 
     @Mod.EventHandler
     public void Init(FMLInitializationEvent event)
     {
-        if(Loader.isModLoaded("magicalcrops") & Config.magCropOre) Mods.MagicalCrops(null);
-        if(Loader.isModLoaded("ProjRed|Exploration") & Config.ProjRedOres) Mods.ProjectRed(null);
+        if(Config.magCropOre && Loader.isModLoaded("magicalcrops")) Mods.MagicalCrops(null);
+        if(Config.ProjRedOres && Loader.isModLoaded("ProjRed|Exploration")) Mods.ProjectRed(null);
+		if(Config.BPOres && Loader.isModLoaded("bluepower")) Mods.BluePower(null);
     }
 }

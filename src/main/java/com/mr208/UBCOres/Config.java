@@ -26,7 +26,8 @@ public class Config {
     public static boolean magCropOre;
     public static boolean ProjRedOres;
 	public static boolean ForOres;
-	public static boolean TinkOres;
+	//public static boolean TinkOres;
+	public static boolean BPOres;
 
     public static void init(File configFile)
     {
@@ -55,7 +56,8 @@ public class Config {
         magCropOre = config.getBoolean("Magical Crops Support", "Mod Support", true, "Enable to have Essence Ore spawn with UB Textures. Ore will not have particle effects");
         ProjRedOres = config.getBoolean("Project Red Support", "Mod Support", true, "Enable this to have Ruby, Sapphire, and Peridot spawn with UB Textures.");
 		ForOres = config.getBoolean("Forestry Support","Mod Support", true, "Enable this to have Apatite, Copper and Tin spawn with UB Textures.");
-		TinkOres = config.getBoolean("Tinkers Construct Support","Mod Support", true, "Enable this to have Copper, Tin, and Aluminum spawn with UB Textures. Does not affect Ore Gravel.");
+		//TinkOres = config.getBoolean("Tinkers Construct Support","Mod Support", true, "Enable this to have Copper, Tin, and Aluminum spawn with UB Textures. Does not affect Ore Gravel.");
+		BPOres = config.getBoolean("Blue Power Support","Mod Support", true, "Enable this to have Teslatite, Copper, Silver, Zinc, Tungsten, Ruby, Sapphire, and Amethyst spawn with UB Textures");
 
         if (config.hasChanged())
         {
