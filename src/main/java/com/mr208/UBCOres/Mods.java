@@ -118,4 +118,10 @@ public class Mods {
 		UBCHelper.registerModOresWithoutMeta("bluepower",BLOCKS,NAMES,event);
 	}
 
+	public static void ImmEng(FMLPreInitializationEvent event)
+	{
+		String[] NAMES = {"copper","bauxite","lead","silver","nickel"};
+		UBCHelper.registerModOresWithMeta("ImmersiveEngineering","ore",0,1,NAMES,event);
+	}
+
 }

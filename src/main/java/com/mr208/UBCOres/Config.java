@@ -2,7 +2,6 @@ package com.mr208.UBCOres;
 
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import com.mr208.UBCOres.References;
 import net.minecraftforge.common.config.Configuration;
 import java.io.File;
 
@@ -26,6 +25,7 @@ public class Config {
     public static boolean magCropOre;
     public static boolean ProjRedOres;
 	public static boolean ForOres;
+	public static boolean IEOres;
 	//public static boolean TinkOres;
 	public static boolean BPOres;
 
@@ -58,6 +58,7 @@ public class Config {
 		ForOres = config.getBoolean("Forestry Support","Mod Support", true, "Enable this to have Apatite, Copper and Tin spawn with UB Textures.");
 		//TinkOres = config.getBoolean("Tinkers Construct Support","Mod Support", true, "Enable this to have Copper, Tin, and Aluminum spawn with UB Textures. Does not affect Ore Gravel.");
 		BPOres = config.getBoolean("Blue Power Support","Mod Support", true, "Enable this to have Teslatite, Copper, Silver, Zinc, Tungsten, Ruby, Sapphire, and Amethyst spawn with UB Textures");
+		IEOres = config.getBoolean("Immersive Engineering Support", "Mod Support", true,"Enable this to have Copper, Bauxite, Lead, Silver, and Nickel spawn with UB Textures");
 
         if (config.hasChanged())
         {
