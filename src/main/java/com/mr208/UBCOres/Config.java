@@ -28,6 +28,7 @@ public class Config {
 	public static boolean IEOres;
 	//public static boolean TinkOres;
 	public static boolean BPOres;
+	public static boolean AM2Ores;
 
     public static void init(File configFile)
     {
@@ -59,6 +60,7 @@ public class Config {
 		//TinkOres = config.getBoolean("Tinkers Construct Support","Mod Support", true, "Enable this to have Copper, Tin, and Aluminum spawn with UB Textures. Does not affect Ore Gravel.");
 		BPOres = config.getBoolean("Blue Power Support","Mod Support", true, "Enable this to have Teslatite, Copper, Silver, Zinc, Tungsten, Ruby, Sapphire, and Amethyst spawn with UB Textures");
 		IEOres = config.getBoolean("Immersive Engineering Support", "Mod Support", true,"Enable this to have Copper, Bauxite, Lead, Silver, and Nickel spawn with UB Textures");
+		AM2Ores = config.getBoolean("Ars Magica 2 Support","Mod Support", true,"Enable this to have Vinteum, Chimerite, Blue Topaz, and Moonstone spawn with UB Textures");
 
         if (config.hasChanged())
         {

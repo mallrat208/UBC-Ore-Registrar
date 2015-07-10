@@ -124,4 +124,10 @@ public class Mods {
 		UBCHelper.registerModOresWithMeta("ImmersiveEngineering","ore",0,1,NAMES,event);
 	}
 
+	public static void ArsMag(FMLPreInitializationEvent event)
+	{
+		String[] NAMES = {"vinteum","chimerite","bluetopaz","moonstone"};
+		UBCHelper.registerModOresWithMeta("arsmagica2","vinteumOre",0,1,NAMES,null);
+	}
+
 }

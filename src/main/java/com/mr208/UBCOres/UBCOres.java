@@ -43,5 +43,6 @@ public static UBCOres instance;
         if(Config.magCropOre && Loader.isModLoaded("magicalcrops")) Mods.MagicalCrops(null);
         if(Config.ProjRedOres && Loader.isModLoaded("ProjRed|Exploration")) Mods.ProjectRed(null);
 		if(Config.BPOres && Loader.isModLoaded("bluepower")) Mods.BluePower(null);
+		if(Config.AM2Ores && Loader.isModLoaded("arsmagica2")) Mods.ArsMag(null);
     }
 }
