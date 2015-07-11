@@ -53,7 +53,7 @@ public class Mods {
 	public static void IC2(FMLPreInitializationEvent event)
 	{
 		String[] BLOCKS = {"blockOreCopper","blockOreTin","blockOreLead","blockOreUran"};
-		String[] NAMES = {"copper","lead","tin","uranium"};
+		String[] NAMES = {"copper","tin","lead","uranium"};
 		UBCHelper.registerModOresWithoutMeta("IC2",BLOCKS,NAMES,event);
 	}
 
