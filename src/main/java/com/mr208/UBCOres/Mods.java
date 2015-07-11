@@ -22,7 +22,7 @@ public class Mods {
 	public static void BOP(FMLPreInitializationEvent event)
 	{
 		String NAMES[] = {"ruby","peridot","topaz", "tanzanite", "malachite", "sapphire", "amber"};
-		UBCHelper.registerModOresWithMeta("BiomesOPlenty", "gemOre", 0, 2, NAMES, event);
+		UBCHelper.registerModOresWithMeta("BiomesOPlenty", "gemOre", 2, 2, NAMES, event);
 	}
 
 	public static void Factorization(FMLPreInitializationEvent event)

@@ -5,7 +5,7 @@ public class References {
 
     public final static String MODID = "ubcores";
     public final static String MODNAME ="UBC Ore Registrar";
-    public final static String VERSION ="1.7.10-0.2.5.2";
+    public final static String VERSION ="1.7.10-0.2.5.3";
     public final static String DEPENDENCIES =   "required-after:UndergroundBiomes;" +
                                                 "after:factorization;" +
                                                 "after:Thaumcraft;" +
