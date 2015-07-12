@@ -71,7 +71,7 @@ public class Mods {
 
 	public static void ProjectRed(FMLPreInitializationEvent event)
 	{
-		String[] NAMES = {"ruby","sapphire","peridot"};
+		String[] NAMES = {"ruby","sapphire","peridot","copper","tin","silver","electrotine"};
 		UBCHelper.registerModOresWithMeta("ProjRed|Exploration","projectred.exploration.ore",0,1,NAMES,null);
 	}
 
