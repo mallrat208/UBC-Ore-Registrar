@@ -24,7 +24,7 @@ public static UBCOres instance;
         if(Config.BOPOre && Loader.isModLoaded("BiomesOPlenty")) Mods.BOP(event);
         if(Config.TFOres && Loader.isModLoaded("ThermalFoundation")) Mods.ThermalFoundation(event);
         if(Config.HarvestOres && Loader.isModLoaded("harvestcraft")) Mods.Harvestcraft(event);
-        if(Config.RailOres && Loader.isModLoaded("Railcraft")) Mods.Railcraft(event);
+		if(Config.RailOres && Loader.isModLoaded("Railcraft")) Mods.Railcraft(event);
         if(Config.FSPOres && Loader.isModLoaded("Steamcraft")) Mods.FlaxSteampower(event);
         if(Config.BROre && Loader.isModLoaded("BigReactors")) Mods.BigReactors(event);
         if(Config.FarOres && Loader.isModLoaded("farlanders")) Mods.Farlanders(event);

@@ -77,8 +77,18 @@ public class Mods {
 
 	public static void Railcraft(FMLPreInitializationEvent event)
 	{
-		Block RCOreBlock = GameRegistry.findBlock("Railcraft","tile.railcraft.ore");
-		UBCHelper.registerOreBlock(RCOreBlock,0,"sulfur",event);
+
+		Block RCOreBlock = GameRegistry.findBlock("Railcraft","ore");
+		//UBCHelper.registerOreBlock(RCOreBlock,0,"sulfur",event);
+		UBCHelper.registerOreBlock(RCOreBlock,0,"railcraft","ore.sulfur","sulfur",event);
+
+		//Temporarily disabled due to Ores registering under the wrong Ore Dictionary Tag.
+		//String[] NAMES = {"Iron","Gold","Copper","Tin","Lead"};
+		//for(int Ore=0;(Ore<NAMES.length);Ore++)
+		//{
+		//	UBCHelper.registerOreBlock(RCOreBlock,Ore+7,"railcraft","ore.poor."+ NAMES[Ore].toLowerCase(),"poor" + NAMES[Ore],event);
+		//}
+
 	}
 
 	public static void Steamcraft2(FMLPreInitializationEvent event)
