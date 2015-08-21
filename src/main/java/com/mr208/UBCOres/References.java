@@ -5,7 +5,7 @@ public class References {
 
     public final static String MODID = "ubcores";
     public final static String MODNAME ="UBC Ore Registrar";
-    public final static String VERSION ="1.7.10-0.2.6.1";
+    public final static String VERSION ="1.7.10-0.2.7.0";
     public final static String DEPENDENCIES =   "required-after:UndergroundBiomes;" +
                                                 "after:factorization;" +
                                                 "after:Thaumcraft;" +
@@ -26,5 +26,6 @@ public class References {
 												"after:TConstruct;" +
 												"after:bluepower;" +
 												"after:ImmersiveEngineering;" +
-												"after:arsmagica2";
+												"after:arsmagica2;" +
+												"after:IC2-Classic-Spmod";
 }

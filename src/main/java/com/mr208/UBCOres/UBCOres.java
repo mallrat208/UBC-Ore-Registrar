@@ -1,5 +1,7 @@
 package com.mr208.UBCOres;
 
+import net.minecraftforge.event.world.ChunkDataEvent;
+
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -30,6 +32,7 @@ public static UBCOres instance;
         if(Config.FarOres && Loader.isModLoaded("farlanders")) Mods.Farlanders(event);
         if(Config.MekOres && Loader.isModLoaded("Mekanism")) Mods.Mekanism(event);
         if(Config.IC2Ores && Loader.isModLoaded("IC2")) Mods.IC2(event);
+		if(Config.IC2Ores && Loader.isModLoaded("IC2-Classic-Spmod")) Mods.IC2Classic(event);
         if(Config.AE2Ores && Loader.isModLoaded("appliedenergistics2")) Mods.AE2(event);
 		if(Config.ForOres && Loader.isModLoaded("Forestry")) Mods.Forestry(event);
 		if(Config.IEOres && Loader.isModLoaded("ImmersiveEngineering")) Mods.ImmEng(event);

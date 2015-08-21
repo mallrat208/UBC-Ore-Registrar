@@ -57,6 +57,14 @@ public class Mods {
 		UBCHelper.registerModOresWithoutMeta("IC2",BLOCKS,NAMES,event);
 	}
 
+	public static void IC2Classic(FMLPreInitializationEvent event)
+	{
+		String[] BLOCKS = {"uraniumOre","tinOre","copperOre"};
+		String[] NAMES = {"uranium","tin","copper"};
+		UBCHelper.registerModOresWithoutMeta("IC2",BLOCKS,NAMES,event);
+	}
+
+
 	public static void MagicalCrops(FMLPreInitializationEvent event)
 	{
 		Block magCropOre = GameRegistry.findBlock("magicalcrops","magicalcrops_EssenceOre");
