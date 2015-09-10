@@ -117,6 +117,12 @@ public class Mods {
 		String[] NAMES = {"aluminum","copper","tin", "zinc","uranite","brimstone","phosphate"};
 		UBCHelper.registerModOresWithMeta("steamcraft2","BlockSteamcraftOre",0,1,NAMES,event);
 	}
+  
+  public static void TaintedMagic(FMLPreInitializationEvent event)
+  {
+    Block ShadowOreBlock = GameRegistry.findBlock("TaintedMagic", "OreShadow");
+    UBCHelper.registerOreBlock(ShadowOreBlock, 0, "shadow", event);
+  }
 
 	public static void ThermalFoundation(FMLPreInitializationEvent event)
 	{

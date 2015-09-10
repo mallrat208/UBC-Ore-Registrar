@@ -29,5 +29,6 @@ public class References {
 												"after:arsmagica2;" +
 												"after:IC2-Classic-Spmod;" +
                         "after:GalacticraftCore;" +
-                        "after:Jaffas-Technic";
+                        "after:Jaffas-Technic;" +
+                        "after:TaintedMagic";
 }
