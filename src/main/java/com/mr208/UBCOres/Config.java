@@ -30,6 +30,7 @@ public class Config {
 	public static boolean BPOres;
 	public static boolean AM2Ores;
   public static boolean GalacticOres;
+  public static boolean JaffaOres;
 
     public static void init(File configFile)
     {
@@ -63,6 +64,7 @@ public class Config {
 		IEOres = config.getBoolean("Immersive Engineering Support", "Mod Support", true,"Enable this to have Copper, Bauxite, Lead, Silver, and Nickel spawn with UB Textures");
 		AM2Ores = config.getBoolean("Ars Magica 2 Support","Mod Support", true,"Enable this to have Vinteum, Chimerite, Blue Topaz, and Moonstone spawn with UB Textures");
     GalacticOres = config.getBoolean("GalactiCraft Support","Mod Support",true,"Enable this to have GalactiCraft's Aluminium, Copper, Silicon, and Tin generate with UB textures.");
+    JaffaOres = config.getBoolean("Jaffas and More Support","Mod Support",true,"Enable this to have Jaffas and More's Limsew and Jaffarrol generate with UB textures.");
 
         if (config.hasChanged())
         {

@@ -69,6 +69,13 @@ public class Mods {
 		String[] NAMES = {"uranium","tin","copper"};
 		UBCHelper.registerModOresWithoutMeta("IC2",BLOCKS,NAMES,event);
 	}
+  
+  public static void JaffasAndMore(FMLPreInitializationEvent event)
+  {
+    String[] BLOCKS = {"tile.jaffas.jaffarrolOre","tile.jaffas.limsewOre"};
+    String[] NAMES = {"jaffarrol","limsew"};
+    UBCHelper.registerModOresWithoutMeta("Jaffas-Technic",BLOCKS,NAMES,event);
+  }
 
 
 	public static void MagicalCrops(FMLPreInitializationEvent event)

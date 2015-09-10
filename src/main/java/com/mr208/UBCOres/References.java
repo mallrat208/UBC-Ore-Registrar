@@ -28,5 +28,6 @@ public class References {
 												"after:ImmersiveEngineering;" +
 												"after:arsmagica2;" +
 												"after:IC2-Classic-Spmod;" +
-                        "after:GalacticraftCore";
+                        "after:GalacticraftCore;" +
+                        "after:Jaffas-Technic";
 }

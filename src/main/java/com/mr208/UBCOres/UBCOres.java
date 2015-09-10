@@ -38,7 +38,8 @@ public static UBCOres instance;
 		if(Config.IEOres && Loader.isModLoaded("ImmersiveEngineering")) Mods.ImmEng(event);
 		//if(Config.TinkOres && Loader.isModLoaded("TConstruct")) Mods.TConstruct(event);
     if(Config.GalacticOres && Loader.isModLoaded("GalacticraftCore")) Mods.GalactiCraft(event);
-
+    if(Config.JaffaOres && Loader.isModLoaded("Jaffas-Technic")) Mods.JaffasAndMore(event);
+      
     }
 
     @Mod.EventHandler
