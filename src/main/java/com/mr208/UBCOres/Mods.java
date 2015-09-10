@@ -72,9 +72,12 @@ public class Mods {
   
   public static void JaffasAndMore(FMLPreInitializationEvent event)
   {
-    String[] BLOCKS = {"tile.jaffas.jaffarrolOre","tile.jaffas.limsewOre"};
-    String[] NAMES = {"jaffarrol","limsew"};
-    UBCHelper.registerModOresWithoutMeta("Jaffas-Technic",BLOCKS,NAMES,event);
+    String jaffasModName = "Jaffas-Technic";
+    Block jaffarrolOre = GameRegistry.findBlock(jaffasModName, "tile.jaffas.jaffarrolOre");
+    Block limsewOre = GameRegistry.findBlock(jaffasModName, "tile.jaffas.limsewOre");
+    // meta of 1 used to denote naturally spawned ore (drops xp orbs when mined)
+    UBCHelper.registerOreBlock(jaffarrolOre, 1, "jaffarrol", event);
+    UBCHelper.registerOreBlock(limsewOre, 0, "limsew", event);
   }
 
 
