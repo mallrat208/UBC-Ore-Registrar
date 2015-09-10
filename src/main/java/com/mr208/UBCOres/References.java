@@ -27,5 +27,6 @@ public class References {
 												"after:bluepower;" +
 												"after:ImmersiveEngineering;" +
 												"after:arsmagica2;" +
-												"after:IC2-Classic-Spmod";
+												"after:IC2-Classic-Spmod;" +
+                        "after:GalacticraftCore";
 }

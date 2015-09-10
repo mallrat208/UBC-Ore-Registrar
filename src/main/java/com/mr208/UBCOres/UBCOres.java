@@ -37,6 +37,7 @@ public static UBCOres instance;
 		if(Config.ForOres && Loader.isModLoaded("Forestry")) Mods.Forestry(event);
 		if(Config.IEOres && Loader.isModLoaded("ImmersiveEngineering")) Mods.ImmEng(event);
 		//if(Config.TinkOres && Loader.isModLoaded("TConstruct")) Mods.TConstruct(event);
+    if(Config.GalacticOres && Loader.isModLoaded("GalacticraftCore")) Mods.GalactiCraft(event);
 
     }
 

@@ -43,6 +43,12 @@ public class Mods {
 		String Ores[] = {"copper","zinc"};
 		UBCHelper.registerModOresWithMeta("Steamcraft","steamcraftOre",0,1,Ores,event);
 	}
+  
+  public static void GalactiCraft(FMLPreInitializationEvent event)
+  {
+    String Ores[] = {"galacticraftAluminum","galacticraftCopper","galacticraftSilicon","galacticraftTin"};
+    UBCHelper.registerModOresWithMeta("GalacticraftCore","tile.gcBlockCore",5,1,Ores,event);
+  }
 
 	public static void Harvestcraft(FMLPreInitializationEvent event)
 	{
