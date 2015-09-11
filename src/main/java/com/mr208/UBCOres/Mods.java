@@ -24,6 +24,13 @@ public class Mods {
 		String NAMES[] = {"ruby","peridot","topaz", "tanzanite", "malachite", "sapphire", "amber"};
 		UBCHelper.registerModOresWithMeta("BiomesOPlenty", "gemOre", 2, 2, NAMES, event);
 	}
+  
+  //NOTE: Temporal ore doesn't spawn naturally
+  public static void ClockworkPhase(FMLPreInitializationEvent event)
+  {
+    Block temporalOre = GameRegistry.findBlock("clockworkphase", "oreTemporal");
+    UBCHelper.registerOreBlock(temporalOre, 0, "temporal", event);
+  }
 
 	public static void Factorization(FMLPreInitializationEvent event)
 	{

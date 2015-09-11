@@ -30,5 +30,6 @@ public class References {
 												"after:IC2-Classic-Spmod;" +
                         "after:GalacticraftCore;" +
                         "after:Jaffas-Technic;" +
-                        "after:TaintedMagic";
+                        "after:TaintedMagic;" +
+                        "after:clockworkphase";
 }

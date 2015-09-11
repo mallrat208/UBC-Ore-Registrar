@@ -40,6 +40,7 @@ public static UBCOres instance;
     if(Config.GalacticOres && Loader.isModLoaded("GalacticraftCore")) Mods.GalactiCraft(event);
     if(Config.JaffaOres && Loader.isModLoaded("Jaffas-Technic")) Mods.JaffasAndMore(event);
     if(Config.TaintOres && Loader.isModLoaded("TaintedMagic")) Mods.TaintedMagic(event);
+    if(Config.ClockPhaseOres && Loader.isModLoaded("clockworkphase")) Mods.ClockworkPhase(event);
       
     }
 
