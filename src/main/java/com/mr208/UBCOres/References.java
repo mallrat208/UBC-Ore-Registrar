@@ -32,5 +32,6 @@ public class References {
                         "after:Jaffas-Technic;" +
                         "after:TaintedMagic;" +
                         "after:clockworkphase;" +
-                        "after:rftools";
+                        "after:rftools;" +
+                        "after:Eln";
 }

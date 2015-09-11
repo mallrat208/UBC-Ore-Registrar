@@ -34,6 +34,7 @@ public class Config {
   public static boolean TaintOres;
   public static boolean ClockPhaseOres;
   public static boolean RFToolsOres;
+  public static boolean ElnOres;
 
     public static void init(File configFile)
     {
@@ -71,6 +72,7 @@ public class Config {
     TaintOres = config.getBoolean("Tainted Magic Support","Mod Support",true,"Enable this to have Tainted Magic's Shadow generate with UB textures.");
     ClockPhaseOres = config.getBoolean("Clockwork Phase Support","Mod Support",true,"Enable this to have Clockwork Phase's Temporal generate with UB textures.");
     RFToolsOres = config.getBoolean("RFTools Support","Mod Support",true,"Enable this to have RFTools' Dimensional Shards generate with UB textures.");
+    ElnOres = config.getBoolean("Electircal Age Support","Mod Support",true,"Enable this to have Electrical Age's Copper, Lead, Tungsten and Cinnabar generate with UB textures.");
     
         if (config.hasChanged())
         {

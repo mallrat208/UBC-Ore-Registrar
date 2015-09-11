@@ -31,6 +31,16 @@ public class Mods {
     Block temporalOre = GameRegistry.findBlock("clockworkphase", "oreTemporal");
     UBCHelper.registerOreBlock(temporalOre, 0, "temporal", event);
   }
+  
+  public static void ElectricalAge(FMLPreInitializationEvent event)
+  {
+    Block elnOreBlock = GameRegistry.findBlock("Eln", "Eln.Ore");
+    UBCHelper.registerOreBlock(elnOreBlock, 1, "elnCopper", event);
+    String[] NAMES = {"elnLead", "elnTungsten", "elnCinnabar"};
+    for (int it = 0; it < NAMES.length; it++) {
+      UBCHelper.registerOreBlock(elnOreBlock, it + 4, NAMES[it], event);
+    }
+  }
 
 	public static void Factorization(FMLPreInitializationEvent event)
 	{
