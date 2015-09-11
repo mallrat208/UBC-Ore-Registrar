@@ -31,5 +31,6 @@ public class References {
                         "after:GalacticraftCore;" +
                         "after:Jaffas-Technic;" +
                         "after:TaintedMagic;" +
-                        "after:clockworkphase";
+                        "after:clockworkphase;" +
+                        "after:rftools";
 }

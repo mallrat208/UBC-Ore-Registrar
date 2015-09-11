@@ -121,6 +121,11 @@ public class Mods {
 		//}
 
 	}
+  
+  public static void RFTools(FMLPreInitializationEvent event) {
+    Block dimensionalShard = GameRegistry.findBlock("rftools", "dimensionalShardBlock");
+    UBCHelper.registerOreBlock(dimensionalShard, 0, "dimensionalShard", event);
+  }
 
 	public static void Steamcraft2(FMLPreInitializationEvent event)
 	{

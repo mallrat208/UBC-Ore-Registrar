@@ -41,6 +41,7 @@ public static UBCOres instance;
     if(Config.JaffaOres && Loader.isModLoaded("Jaffas-Technic")) Mods.JaffasAndMore(event);
     if(Config.TaintOres && Loader.isModLoaded("TaintedMagic")) Mods.TaintedMagic(event);
     if(Config.ClockPhaseOres && Loader.isModLoaded("clockworkphase")) Mods.ClockworkPhase(event);
+    if(Config.RFToolsOres && Loader.isModLoaded("rftools")) Mods.RFTools(event);
       
     }
 

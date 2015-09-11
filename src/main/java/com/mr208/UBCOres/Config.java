@@ -33,6 +33,7 @@ public class Config {
   public static boolean JaffaOres;
   public static boolean TaintOres;
   public static boolean ClockPhaseOres;
+  public static boolean RFToolsOres;
 
     public static void init(File configFile)
     {
@@ -69,6 +70,7 @@ public class Config {
     JaffaOres = config.getBoolean("Jaffas and More Support","Mod Support",true,"Enable this to have Jaffas and More's Limsew and Jaffarrol generate with UB textures.");
     TaintOres = config.getBoolean("Tainted Magic Support","Mod Support",true,"Enable this to have Tainted Magic's Shadow generate with UB textures.");
     ClockPhaseOres = config.getBoolean("Clockwork Phase Support","Mod Support",true,"Enable this to have Clockwork Phase's Temporal generate with UB textures.");
+    RFToolsOres = config.getBoolean("RFTools Support","Mod Support",true,"Enable this to have RFTools' Dimensional Shards generate with UB textures.");
     
         if (config.hasChanged())
         {
