@@ -33,5 +33,6 @@ public class References {
                         "after:TaintedMagic;" +
                         "after:clockworkphase;" +
                         "after:rftools;" +
-                        "after:Eln";
+                        "after:Eln;" +
+                        "after:fossil";
 }

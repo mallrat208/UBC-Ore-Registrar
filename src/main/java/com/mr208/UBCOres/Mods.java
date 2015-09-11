@@ -61,6 +61,12 @@ public class Mods {
 		UBCHelper.registerModOresWithMeta("Steamcraft","steamcraftOre",0,1,Ores,event);
 	}
   
+  public static void FossilsAndArcheology(FMLPreInitializationEvent event) {
+    String[] BLOCKS = {"amberOre","fossil"};
+    String[] NAMES = {"fAmber", "fFossil"};
+    UBCHelper.registerModOresWithoutMeta("fossil", BLOCKS, NAMES, event);
+  }
+  
   public static void GalactiCraft(FMLPreInitializationEvent event)
   {
     String Ores[] = {"galacticraftAluminum","galacticraftCopper","galacticraftSilicon","galacticraftTin"};
