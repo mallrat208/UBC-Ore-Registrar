@@ -73,7 +73,7 @@ public class Config {
     TaintOres = config.getBoolean("Tainted Magic Support","Mod Support",true,"Enable this to have Tainted Magic's Shadow generate with UB textures.");
     ClockPhaseOres = config.getBoolean("Clockwork Phase Support","Mod Support",true,"Enable this to have Clockwork Phase's Temporal generate with UB textures.");
     RFToolsOres = config.getBoolean("RFTools Support","Mod Support",true,"Enable this to have RFTools' Dimensional Shards generate with UB textures.");
-    ElnOres = config.getBoolean("Electircal Age Support","Mod Support",true,"Enable this to have Electrical Age's Copper, Lead, Tungsten and Cinnabar generate with UB textures.");
+    ElnOres = config.getBoolean("Electrical Age Support","Mod Support",true,"Enable this to have Electrical Age's Copper, Lead, Tungsten and Cinnabar generate with UB textures.");
     FossilOres = config.getBoolean("Fossils and Archeology Revival Support","Mod Support",true,"Enable this to have Fossils and Archeology Revival's Amber and Fossils generate with UB textures.");
     
         if (config.hasChanged())
