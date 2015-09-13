@@ -69,7 +69,7 @@ public class Mods {
   
   public static void GalactiCraft(FMLPreInitializationEvent event)
   {
-    String Ores[] = {"galacticraftAluminum","galacticraftCopper","galacticraftSilicon","galacticraftTin"};
+    String Ores[] = {"galacticraftCopper","galacticraftTin","galacticraftAluminum","galacticraftSilicon"};
     UBCHelper.registerModOresWithMeta("GalacticraftCore","tile.gcBlockCore",5,1,Ores,event);
   }
 
