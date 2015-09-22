@@ -27,5 +27,12 @@ public class References {
 												"after:bluepower;" +
 												"after:ImmersiveEngineering;" +
 												"after:arsmagica2;" +
-												"after:IC2-Classic-Spmod";
+												"after:IC2-Classic-Spmod;" +
+                        "after:GalacticraftCore;" +
+                        "after:Jaffas-Technic;" +
+                        "after:TaintedMagic;" +
+                        "after:clockworkphase;" +
+                        "after:rftools;" +
+                        "after:Eln;" +
+                        "after:fossil";
 }

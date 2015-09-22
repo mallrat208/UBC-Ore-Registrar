@@ -29,6 +29,13 @@ public class Config {
 	//public static boolean TinkOres;
 	public static boolean BPOres;
 	public static boolean AM2Ores;
+  public static boolean GalacticOres;
+  public static boolean JaffaOres;
+  public static boolean TaintOres;
+  public static boolean ClockPhaseOres;
+  public static boolean RFToolsOres;
+  public static boolean ElnOres;
+  public static boolean FossilOres;
 
     public static void init(File configFile)
     {
@@ -61,7 +68,14 @@ public class Config {
 		BPOres = config.getBoolean("Blue Power Support","Mod Support", true, "Enable this to have Teslatite, Copper, Silver, Zinc, Tungsten, Ruby, Sapphire, and Amethyst spawn with UB Textures");
 		IEOres = config.getBoolean("Immersive Engineering Support", "Mod Support", true,"Enable this to have Copper, Bauxite, Lead, Silver, and Nickel spawn with UB Textures");
 		AM2Ores = config.getBoolean("Ars Magica 2 Support","Mod Support", true,"Enable this to have Vinteum, Chimerite, Blue Topaz, and Moonstone spawn with UB Textures");
-
+    GalacticOres = config.getBoolean("GalactiCraft Support","Mod Support",true,"Enable this to have GalactiCraft's Aluminium, Copper, Silicon, and Tin generate with UB textures.");
+    JaffaOres = config.getBoolean("Jaffas and More Support","Mod Support",true,"Enable this to have Jaffas and More's Limsew and Jaffarrol generate with UB textures.");
+    TaintOres = config.getBoolean("Tainted Magic Support","Mod Support",true,"Enable this to have Tainted Magic's Shadow generate with UB textures.");
+    ClockPhaseOres = config.getBoolean("Clockwork Phase Support","Mod Support",true,"Enable this to have Clockwork Phase's Temporal generate with UB textures.");
+    RFToolsOres = config.getBoolean("RFTools Support","Mod Support",true,"Enable this to have RFTools' Dimensional Shards generate with UB textures.");
+    ElnOres = config.getBoolean("Electrical Age Support","Mod Support",true,"Enable this to have Electrical Age's Copper, Lead, Tungsten and Cinnabar generate with UB textures.");
+    FossilOres = config.getBoolean("Fossils and Archeology Revival Support","Mod Support",true,"Enable this to have Fossils and Archeology Revival's Amber and Fossils generate with UB textures.");
+    
         if (config.hasChanged())
         {
             config.save();

@@ -37,7 +37,13 @@ public static UBCOres instance;
 		if(Config.ForOres && Loader.isModLoaded("Forestry")) Mods.Forestry(event);
 		if(Config.IEOres && Loader.isModLoaded("ImmersiveEngineering")) Mods.ImmEng(event);
 		//if(Config.TinkOres && Loader.isModLoaded("TConstruct")) Mods.TConstruct(event);
-
+    if(Config.GalacticOres && Loader.isModLoaded("GalacticraftCore")) Mods.GalactiCraft(event);
+    if(Config.JaffaOres && Loader.isModLoaded("Jaffas-Technic")) Mods.JaffasAndMore(event);
+    if(Config.TaintOres && Loader.isModLoaded("TaintedMagic")) Mods.TaintedMagic(event);
+    if(Config.ClockPhaseOres && Loader.isModLoaded("clockworkphase")) Mods.ClockworkPhase(event);
+    if(Config.RFToolsOres && Loader.isModLoaded("rftools")) Mods.RFTools(event);
+    if(Config.ElnOres && Loader.isModLoaded("Eln")) Mods.ElectricalAge(event);
+      
     }
 
     @Mod.EventHandler
@@ -47,5 +53,6 @@ public static UBCOres instance;
         if(Config.ProjRedOres && Loader.isModLoaded("ProjRed|Exploration")) Mods.ProjectRed(null);
 		if(Config.BPOres && Loader.isModLoaded("bluepower")) Mods.BluePower(null);
 		if(Config.AM2Ores && Loader.isModLoaded("arsmagica2")) Mods.ArsMag(null);
+    if(Config.FossilOres && Loader.isModLoaded("fossil")) Mods.FossilsAndArcheology(null);
     }
 }

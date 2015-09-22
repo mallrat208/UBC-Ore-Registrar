@@ -24,6 +24,23 @@ public class Mods {
 		String NAMES[] = {"ruby","peridot","topaz", "tanzanite", "malachite", "sapphire", "amber"};
 		UBCHelper.registerModOresWithMeta("BiomesOPlenty", "gemOre", 2, 2, NAMES, event);
 	}
+  
+  //NOTE: Temporal ore doesn't spawn naturally
+  public static void ClockworkPhase(FMLPreInitializationEvent event)
+  {
+    Block temporalOre = GameRegistry.findBlock("clockworkphase", "oreTemporal");
+    UBCHelper.registerOreBlock(temporalOre, 0, "temporal", event);
+  }
+  
+  public static void ElectricalAge(FMLPreInitializationEvent event)
+  {
+    Block elnOreBlock = GameRegistry.findBlock("Eln", "Eln.Ore");
+    UBCHelper.registerOreBlock(elnOreBlock, 1, "elnCopper", event);
+    String[] NAMES = {"elnLead", "elnTungsten", "elnCinnabar"};
+    for (int it = 0; it < NAMES.length; it++) {
+      UBCHelper.registerOreBlock(elnOreBlock, it + 4, NAMES[it], event);
+    }
+  }
 
 	public static void Factorization(FMLPreInitializationEvent event)
 	{
@@ -43,6 +60,18 @@ public class Mods {
 		String Ores[] = {"copper","zinc"};
 		UBCHelper.registerModOresWithMeta("Steamcraft","steamcraftOre",0,1,Ores,event);
 	}
+  
+  public static void FossilsAndArcheology(FMLPreInitializationEvent event) {
+    String[] BLOCKS = {"amberOre","fossil"};
+    String[] NAMES = {"fAmber", "fFossil"};
+    UBCHelper.registerModOresWithoutMeta("fossil", BLOCKS, NAMES, event);
+  }
+  
+  public static void GalactiCraft(FMLPreInitializationEvent event)
+  {
+    String Ores[] = {"galacticraftCopper","galacticraftTin","galacticraftAluminum","galacticraftSilicon"};
+    UBCHelper.registerModOresWithMeta("GalacticraftCore","tile.gcBlockCore",5,1,Ores,event);
+  }
 
 	public static void Harvestcraft(FMLPreInitializationEvent event)
 	{
@@ -63,6 +92,16 @@ public class Mods {
 		String[] NAMES = {"uranium","tin","copper"};
 		UBCHelper.registerModOresWithoutMeta("IC2",BLOCKS,NAMES,event);
 	}
+  
+  public static void JaffasAndMore(FMLPreInitializationEvent event)
+  {
+    String jaffasModName = "Jaffas-Technic";
+    Block jaffarrolOre = GameRegistry.findBlock(jaffasModName, "tile.jaffas.jaffarrolOre");
+    Block limsewOre = GameRegistry.findBlock(jaffasModName, "tile.jaffas.limsewOre");
+    // meta of 1 used to denote naturally spawned ore (drops xp orbs when mined)
+    UBCHelper.registerOreBlock(jaffarrolOre, 1, "jaffarrol", event);
+    UBCHelper.registerOreBlock(limsewOre, 0, "limsew", event);
+  }
 
 
 	public static void MagicalCrops(FMLPreInitializationEvent event)
@@ -98,12 +137,23 @@ public class Mods {
 		//}
 
 	}
+  
+  public static void RFTools(FMLPreInitializationEvent event) {
+    Block dimensionalShard = GameRegistry.findBlock("rftools", "dimensionalShardBlock");
+    UBCHelper.registerOreBlock(dimensionalShard, 0, "dimensionalShard", event);
+  }
 
 	public static void Steamcraft2(FMLPreInitializationEvent event)
 	{
 		String[] NAMES = {"aluminum","copper","tin", "zinc","uranite","brimstone","phosphate"};
 		UBCHelper.registerModOresWithMeta("steamcraft2","BlockSteamcraftOre",0,1,NAMES,event);
 	}
+  
+  public static void TaintedMagic(FMLPreInitializationEvent event)
+  {
+    Block ShadowOreBlock = GameRegistry.findBlock("TaintedMagic", "OreShadow");
+    UBCHelper.registerOreBlock(ShadowOreBlock, 0, "shadow", event);
+  }
 
 	public static void ThermalFoundation(FMLPreInitializationEvent event)
 	{
