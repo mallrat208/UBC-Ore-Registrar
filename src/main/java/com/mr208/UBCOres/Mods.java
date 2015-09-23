@@ -147,5 +147,10 @@ public class Mods {
 		String[] NAMES = {"vinteum","chimerite","bluetopaz","moonstone"};
 		UBCHelper.registerModOresWithMeta("arsmagica2","vinteumOre",0,1,NAMES,null);
 	}
-
+	
+	public static void BigReactors(FMLPreInitializationEvent event)
+	{
+		Block BLOCK = GameRegistry.findBlock("DraconicEvolution","draconiumOre");
+		UBCHelper.registerOreBlock(BLOCK, 0, "draconium", event);
+	}
 }

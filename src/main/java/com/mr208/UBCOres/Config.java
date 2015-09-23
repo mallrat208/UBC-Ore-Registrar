@@ -29,6 +29,7 @@ public class Config {
 	//public static boolean TinkOres;
 	public static boolean BPOres;
 	public static boolean AM2Ores;
+	public static boolean DEOre;
 
     public static void init(File configFile)
     {
@@ -61,6 +62,7 @@ public class Config {
 		BPOres = config.getBoolean("Blue Power Support","Mod Support", true, "Enable this to have Teslatite, Copper, Silver, Zinc, Tungsten, Ruby, Sapphire, and Amethyst spawn with UB Textures");
 		IEOres = config.getBoolean("Immersive Engineering Support", "Mod Support", true,"Enable this to have Copper, Bauxite, Lead, Silver, and Nickel spawn with UB Textures");
 		AM2Ores = config.getBoolean("Ars Magica 2 Support","Mod Support", true,"Enable this to have Vinteum, Chimerite, Blue Topaz, and Moonstone spawn with UB Textures");
+		DEOre = config.getBoolean("Draconic Evolution Support", "Mod Support", true, "Enable this to have Draconium Ore spawn with UB Textures in the Overworld");
 
         if (config.hasChanged())
         {

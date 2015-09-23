@@ -36,6 +36,7 @@ public static UBCOres instance;
         if(Config.AE2Ores && Loader.isModLoaded("appliedenergistics2")) Mods.AE2(event);
 		if(Config.ForOres && Loader.isModLoaded("Forestry")) Mods.Forestry(event);
 		if(Config.IEOres && Loader.isModLoaded("ImmersiveEngineering")) Mods.ImmEng(event);
+		if(Config.DEOre && Loader.isModLoaded("DraconicEvolution")) Mods.DraconicEvolution(event);
 		//if(Config.TinkOres && Loader.isModLoaded("TConstruct")) Mods.TConstruct(event);
 
     }
