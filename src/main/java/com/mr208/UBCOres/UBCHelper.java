@@ -31,27 +31,25 @@ public class UBCHelper {
     }
     public static void registerModOresWithMeta(String MODID, String BLOCKNAME, int METASTART, int METASTEP, String[] ORENAMES, FMLPreInitializationEvent event)
     {
-            Block ModOreBlock = GameRegistry.findBlock(MODID,BLOCKNAME);
-            int counter = METASTART;
-            for (String Ore: ORENAMES)
-            {
-                UBCHelper.registerOreBlock(ModOreBlock, counter, Ore, event);
-                counter = counter + METASTEP;
-            }
+        Block ModOreBlock = GameRegistry.findBlock(MODID,BLOCKNAME);
+        int counter = METASTART;
+        for (String Ore: ORENAMES)
+        {
+            UBCHelper.registerOreBlock(ModOreBlock, counter, Ore, event);
+            counter = counter + METASTEP;
         }
+    }
     public static void  registerModOresWithoutMeta(String MODID, String[] BLOCKNAME, String[] NAME, FMLPreInitializationEvent event)
     {
-            if (BLOCKNAME.length != NAME.length)
-            {
-                Log.error("Array Mismatch while setting up " + MODID + " Ores. Skipping.");
-                return;
-            }
-            for (int Ore = 0; Ore < BLOCKNAME.length; Ore++)
-            {
-                Block ModBlock = GameRegistry.findBlock(MODID,BLOCKNAME[Ore]);
-                UBCHelper.registerOreBlock(ModBlock, 0, NAME[Ore], event);
-            }
-
+        if (BLOCKNAME.length != NAME.length)
+        {
+            Log.error("Array Mismatch while setting up " + MODID + " Ores. Skipping.");
+            return;
         }
-
+        for (int Ore = 0; Ore < BLOCKNAME.length; Ore++)
+        {
+            Block ModBlock = GameRegistry.findBlock(MODID,BLOCKNAME[Ore]);
+            UBCHelper.registerOreBlock(ModBlock, 0, NAME[Ore], event);
+        }
+    }
 }
