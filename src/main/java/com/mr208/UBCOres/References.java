@@ -4,8 +4,8 @@ package com.mr208.UBCOres;
 public class References {
 
     public final static String MODID = "ubcores";
-    public final static String MODNAME ="UBC Ore Registrar";
-    public final static String VERSION ="1.7.10-0.2.7.0";
+    public final static String MODNAME = "UBC Ore Registrar";
+    public final static String VERSION = "1.7.10-0.2.7.0";
     public final static String DEPENDENCIES =   "required-after:UndergroundBiomes;" +
                                                 "after:factorization;" +
                                                 "after:Thaumcraft;" +
@@ -34,6 +34,6 @@ public class References {
                                                 "after:clockworkphase;" +
                                                 "after:rftools;" +
                                                 "after:Eln;" +
-                                                "after:fossil" +
+                                                "after:fossil;" +
                                                 "after:DraconicEvolution";
 }

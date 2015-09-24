@@ -13,12 +13,12 @@ public class UBCHelper {
 
     public static void registerOreBlock(Block block, int meta,String name,FMLPreInitializationEvent event)
     {
-        registerOreBlock( block, meta, "ubcores", name + "_overlay", name, event);
+        registerOreBlock(block, meta, "ubcores", name + "_overlay", name, event);
     }
 
-    public static void registerOreBlock(Block block, int meta,String modname, String texturename, String name,FMLPreInitializationEvent event)
+    public static void registerOreBlock(Block block, int meta, String modname, String texturename, String name,FMLPreInitializationEvent event)
     {
-        ItemStack placeholder = new ItemStack(  block, 1, meta);
+        ItemStack placeholder = new ItemStack(block, 1, meta);
         try {
             UBAPIHook.ubAPIHook.ubOreTexturizer.setupUBOre(block, meta, modname + ":" + texturename, "ore." + name, event);
         } catch (Exception e) {
@@ -29,13 +29,13 @@ public class UBCHelper {
         if (placeholder != null)
             Log.info("Added " + placeholder.getDisplayName() + " for Underground Biomes Ore Texturization");
     }
-    public static void registerModOresWithMeta(String MODID, String BLOCKNAME, int METASTART, int METASTEP,String[] ORENAMES, FMLPreInitializationEvent event)
+    public static void registerModOresWithMeta(String MODID, String BLOCKNAME, int METASTART, int METASTEP, String[] ORENAMES, FMLPreInitializationEvent event)
     {
             Block ModOreBlock = GameRegistry.findBlock(MODID,BLOCKNAME);
             int counter = METASTART;
             for (String Ore: ORENAMES)
             {
-                UBCHelper.registerOreBlock(ModOreBlock,counter,Ore,event);
+                UBCHelper.registerOreBlock(ModOreBlock, counter, Ore, event);
                 counter = counter + METASTEP;
             }
         }
@@ -46,10 +46,10 @@ public class UBCHelper {
                 Log.error("Array Mismatch while setting up " + MODID + " Ores. Skipping.");
                 return;
             }
-            for (int Ore = 0; Ore<BLOCKNAME.length; Ore++)
+            for (int Ore = 0; Ore < BLOCKNAME.length; Ore++)
             {
                 Block ModBlock = GameRegistry.findBlock(MODID,BLOCKNAME[Ore]);
-                UBCHelper.registerOreBlock(ModBlock,0,NAME[Ore],event);
+                UBCHelper.registerOreBlock(ModBlock, 0, NAME[Ore], event);
             }
 
         }

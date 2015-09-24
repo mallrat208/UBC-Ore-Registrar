@@ -40,7 +40,7 @@ public class Config {
 
     public static void init(File configFile)
     {
-        if (config==null)
+        if(config == null)
         {
             config = new Configuration(configFile);
             loadConfig();
@@ -49,34 +49,34 @@ public class Config {
 
     public static void loadConfig()
     {
-        BROre = config.getBoolean("Big Reactors Support","Mod Support",true,"Enable this to have Yellorite spawn with UB Textures.");
-        BOPOre = config.getBoolean("Biomes O Plenty Gems","Mod Support",true,"Enable this to have Ruby, Sapphire, Peridot, Malachite, Tanzanite, Topaz, and Amber from Biomes O Plenty spawn with UB Textures.");
-        FZOres = config.getBoolean("Factorization Support", "Mod Support",true,"Enable this to have Dark Iron and Silver spawn with UB Textures.");
-        FarOres = config.getBoolean("Farlanders Support", "Mod Support",true,"Enable this to have Endumium spawn with UB Textures.");
-        FSPOres = config.getBoolean("Flaxbeard's Steampower Support", "Mod Support", true,"Enable this to have Copper and Zinc spawn with UB textures.");
-        HarvestOres = config.getBoolean("Pam's Harvestcraft Support", "Mod Support", true,"Enable this to have Salt spawn with UB Textures.");
-        IC2Ores = config.getBoolean("IndustrialCraft 2 Support","Mod Support", true,"Enable this to have Copper, Lead, Tin, and Uranium spawn with UB Textures.");
-        MekOres = config.getBoolean("Mekanism Support","Mod Support", true,"Enable this to have Osmium, Copper, and Tin spawn with UB Textures.");
-        RailOres = config.getBoolean("Railcraft Support", "Mod Support", true, "Enable this to have Sulfur spawn with UB Textures.");
-        Steam2Ores = config.getBoolean("Steamcraft 2 Support", "Mod Support", true, "Enable this to have Copper, Tin, Zinc, Aluminum, Brimstone, Phosphate, and Uranite to spawn with UB Textures.");
-        TFOres = config.getBoolean("Thermal Foundation Support", "Mod Support", true, "Enable this to hsve Copper, Tin, Silver, Lead, Ferrous, Shiny, and Mana Infused Ore spawn with UB Textures.");
-        ThaumOres = config.getBoolean("Thaumcraft Support", "Mod Support", true, "Enable this to have Cinnibar, Amber, and Infused Stone spawn with UB Textures.");
-        AE2Ores = config.getBoolean("Applied Energistics 2 Support", "Mod Support", true, "Enable this to have Certus Quartz and Charged Certus Quartz spawn with UB Textures. Note, Charged Quartz will not have a particle effect.");
-        magCropOre = config.getBoolean("Magical Crops Support", "Mod Support", true, "Enable to have Essence Ore spawn with UB Textures. Ore will not have particle effects.");
-        ProjRedOres = config.getBoolean("Project Red Support", "Mod Support", true, "Enable this to have Ruby, Sapphire, and Peridot spawn with UB Textures.");
-        ForOres = config.getBoolean("Forestry Support","Mod Support", true, "Enable this to have Apatite, Copper and Tin spawn with UB Textures.");
-        //TinkOres = config.getBoolean("Tinkers Construct Support","Mod Support", true, "Enable this to have Copper, Tin, and Aluminum spawn with UB Textures. Does not affect Ore Gravel.");
-        BPOres = config.getBoolean("Blue Power Support","Mod Support", true, "Enable this to have Teslatite, Copper, Silver, Zinc, Tungsten, Ruby, Sapphire, and Amethyst spawn with UB Textures.");
-        IEOres = config.getBoolean("Immersive Engineering Support", "Mod Support", true,"Enable this to have Copper, Bauxite, Lead, Silver, and Nickel spawn with UB Textures.");
-        AM2Ores = config.getBoolean("Ars Magica 2 Support","Mod Support", true,"Enable this to have Vinteum, Chimerite, Blue Topaz, and Moonstone spawn with UB Textures");
-        GalacticOres = config.getBoolean("GalactiCraft Support","Mod Support",true,"Enable this to have GalactiCraft's Aluminium, Copper, Silicon, and Tin generate with UB textures.");
-        JaffaOres = config.getBoolean("Jaffas and More Support","Mod Support",true,"Enable this to have Jaffas and More's Limsew and Jaffarrol generate with UB textures.");
-        TaintOres = config.getBoolean("Tainted Magic Support","Mod Support",true,"Enable this to have Tainted Magic's Shadow generate with UB textures.");
-        ClockPhaseOres = config.getBoolean("Clockwork Phase Support","Mod Support",true,"Enable this to have Clockwork Phase's Temporal generate with UB textures.");
-        RFToolsOres = config.getBoolean("RFTools Support","Mod Support",true,"Enable this to have RFTools' Dimensional Shards generate with UB textures.");
-        ElnOres = config.getBoolean("Electrical Age Support","Mod Support",true,"Enable this to have Electrical Age's Copper, Lead, Tungsten and Cinnabar generate with UB textures.");
-        FossilOres = config.getBoolean("Fossils and Archeology Revival Support","Mod Support",true,"Enable this to have Fossils and Archeology Revival's Amber and Fossils generate with UB textures.");
-        DEOre = config.getBoolean("Draconic Evolution Support", "Mod Support", true, "Enable this to have Draconium Ore spawn with UB Textures in the Overworld.");
+        BROre = config.getBoolean("Big Reactors Support", "Mod Support", true, "Enable UBified versions of Big Reactors' Yellorite Ore.");
+        BOPOre = config.getBoolean("Biomes O Plenty Gems", "Mod Support", true, "Enable UBified versions of Biomes O' Plenty Gem Ores (Amber, Malachite, Peridot, Ruby, Sapphire, Tanzanite, Topaz).");
+        FZOres = config.getBoolean("Factorization Support", "Mod Support", true, "Enable UBified versions of Factorization Ores (Dark Iron, Silver).");
+        FarOres = config.getBoolean("Farlanders Support", "Mod Support", true, "Enable UBified versions of Farlanders' Endumium Ore.");
+        FSPOres = config.getBoolean("Flaxbeard's Steampower Support", "Mod Support", true, "Enable UBified versions of Steampower Ores (Copper, Zinc).");
+        HarvestOres = config.getBoolean("Pam's Harvestcraft Support", "Mod Support", true, "Enable UBified versions of Harvestcraft's Salt Ore.");
+        IC2Ores = config.getBoolean("IndustrialCraft 2 Support","Mod Support", true, "Enable UBified versions of IC2 Ores (Copper, Lead, Tin, Uranium).");
+        MekOres = config.getBoolean("Mekanism Support", "Mod Support", true, "Enable UBified versions of Mekanism Ores (Copper, Osmium, Tin).");
+        RailOres = config.getBoolean("Railcraft Support", "Mod Support", true, "Enable UBified versions of Railcraft's Sulfur Ore.  UBified Poor Ores currently not supported.");
+        Steam2Ores = config.getBoolean("Steamcraft 2 Support", "Mod Support", true, "Enable UBified versions of Steamcraft 2 Ores (Aluminum, Brimstone, Copper, Phosphate, Tin, Uranite, Zinc).");
+        TFOres = config.getBoolean("Thermal Foundation Support", "Mod Support", true, "Enable UBified versions of Thermal Foundation Ores (Copper, Ferrous, Lead, Mana Infused, Shiny, Silver, Tin).");
+        ThaumOres = config.getBoolean("Thaumcraft Support", "Mod Support", true, "Enable UBified versions of Thaumcraft Ores (Amber, Cinnibar, Infused Stone).");
+        AE2Ores = config.getBoolean("Applied Energistics 2 Support", "Mod Support", true, "Enable UBified versions of AE2 Ores (Certus Quartz, Charged Certus Quartz).  Charged Quartz will not have a particle effect.");
+        magCropOre = config.getBoolean("Magical Crops Support", "Mod Support", true, "Enable UBified versions of Magical Crops' Essence Ore.  Will not have particle effects.");
+        ProjRedOres = config.getBoolean("Project Red Support", "Mod Support", true, "Enable UBified versions of Project Red Ores (Peridot, Ruby, Sapphire).");
+        ForOres = config.getBoolean("Forestry Support", "Mod Support", true, "Enable UBified versions of Forestry Ores (Apatite, Copper, Tin).");
+        //TinkOres = config.getBoolean("Tinkers Construct Support", "Mod Support", true, "Enable UBified versions of TC Ores (Aluminum, Copper, Tin).  Does not affect Gravel Ores.");
+        BPOres = config.getBoolean("Blue Power Support", "Mod Support", true, "Enable UBified versions of Blue Power Ores (Amethyst, Copper, Ruby, Sapphire, Silver, Teslatite, Tungsten, Zinc).");
+        IEOres = config.getBoolean("Immersive Engineering Support", "Mod Support", true, "Enable UBified versions of Immersive Engineering Ores (Bauxite, Copper, Lead, Nickel, Silver).");
+        AM2Ores = config.getBoolean("Ars Magica 2 Support", "Mod Support", true, "Enable UBified versions of Ars Magica 2 Ores (Blue Topaz, Chimerite, Moonstone, Vinteum).");
+        GalacticOres = config.getBoolean("GalactiCraft Support", "Mod Support", true, "Enable UBified versions of GalactiCraft Ores (Aluminium, Copper, Silicon, Tin).");
+        JaffaOres = config.getBoolean("Jaffas and More Support", "Mod Support", true, "Enable UBified versions of Jaffas and More Ores (Jaffarrol, Limsew).");
+        TaintOres = config.getBoolean("Tainted Magic Support", "Mod Support", true, "Enable UBified versions of Tainted Magic's Shadow Ore.");
+        ClockPhaseOres = config.getBoolean("Clockwork Phase Support", "Mod Support", true, "Enable UBified versions of Clockwork Phase's Temporal Ore.");
+        RFToolsOres = config.getBoolean("RFTools Support", "Mod Support", true, "Enable UBified versions of RFTools' Dimensional Shards Ore.");
+        ElnOres = config.getBoolean("Electrical Age Support", "Mod Support", true, "Enable UBified versions of Electrical Age's Ores (Cinnabar, Copper, Lead, Tungsten).");
+        FossilOres = config.getBoolean("Fossils and Archeology Revival Support", "Mod Support", true, "Enable UBified versions of Fossils and Archeology Revival Ores (Amber, Fossils).");
+        DEOre = config.getBoolean("Draconic Evolution Support", "Mod Support", true, "Enable UBified versions of Draconic Evolution's Draconium Ore.");
     
         if (config.hasChanged())
         {

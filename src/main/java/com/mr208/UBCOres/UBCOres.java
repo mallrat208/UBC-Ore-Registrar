@@ -7,7 +7,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid=References.MODID, name=References.MODNAME, dependencies = References.DEPENDENCIES, version = References.VERSION)
+@Mod(modid = References.MODID, name = References.MODNAME, dependencies = References.DEPENDENCIES, version = References.VERSION)
 public class UBCOres {
 
 @Mod.Instance(References.MODID)
