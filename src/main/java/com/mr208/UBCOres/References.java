@@ -22,17 +22,18 @@ public class References {
                                                 "after:appliedenergistics2;" +
                                                 "after:magicalcrops;" +
                                                 "after:ProjRed|Exploration;" +
-												"after:Forestry;" +
-												"after:TConstruct;" +
-												"after:bluepower;" +
-												"after:ImmersiveEngineering;" +
-												"after:arsmagica2;" +
-												"after:IC2-Classic-Spmod;" +
-                        "after:GalacticraftCore;" +
-                        "after:Jaffas-Technic;" +
-                        "after:TaintedMagic;" +
-                        "after:clockworkphase;" +
-                        "after:rftools;" +
-                        "after:Eln;" +
-                        "after:fossil";
+                                                "after:Forestry;" +
+                                                "after:TConstruct;" +
+                                                "after:bluepower;" +
+                                                "after:ImmersiveEngineering;" +
+                                                "after:arsmagica2;" +
+                                                "after:IC2-Classic-Spmod;" +
+                                                "after:GalacticraftCore;" +
+                                                "after:Jaffas-Technic;" +
+                                                "after:TaintedMagic;" +
+                                                "after:clockworkphase;" +
+                                                "after:rftools;" +
+                                                "after:Eln;" +
+                                                "after:fossil" +
+                                                "after:DraconicEvolution";
 }
