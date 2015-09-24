@@ -55,7 +55,7 @@ public class Config {
         FarOres = config.getBoolean("Farlanders Support", "Mod Support", true, "Enable UBified versions of Farlanders' Endumium Ore.");
         FSPOres = config.getBoolean("Flaxbeard's Steampower Support", "Mod Support", true, "Enable UBified versions of Steampower Ores (Copper, Zinc).");
         HarvestOres = config.getBoolean("Pam's Harvestcraft Support", "Mod Support", true, "Enable UBified versions of Harvestcraft's Salt Ore.");
-        IC2Ores = config.getBoolean("IndustrialCraft 2 Support","Mod Support", true, "Enable UBified versions of IC2 Ores (Copper, Lead, Tin, Uranium).");
+        IC2Ores = config.getBoolean("IndustrialCraft 2 Support", "Mod Support", true, "Enable UBified versions of IC2 Ores (Copper, Lead, Tin, Uranium).");
         MekOres = config.getBoolean("Mekanism Support", "Mod Support", true, "Enable UBified versions of Mekanism Ores (Copper, Osmium, Tin).");
         RailOres = config.getBoolean("Railcraft Support", "Mod Support", true, "Enable UBified versions of Railcraft's Sulfur Ore.  UBified Poor Ores currently not supported.");
         Steam2Ores = config.getBoolean("Steamcraft 2 Support", "Mod Support", true, "Enable UBified versions of Steamcraft 2 Ores (Aluminum, Brimstone, Copper, Phosphate, Tin, Uranite, Zinc).");
