@@ -16,7 +16,7 @@ public class UBCHelper {
         registerOreBlock(block, meta, "ubcores", name + "_overlay", name, event);
     }
 
-    public static void registerOreBlock(Block block, int meta, String modname, String texturename, String name,FMLPreInitializationEvent event)
+    public static void registerOreBlock(Block block, int meta, String modname, String texturename, String name, FMLPreInitializationEvent event)
     {
         ItemStack placeholder = new ItemStack(block, 1, meta);
         try {
