@@ -7,7 +7,7 @@ public class Log {
 
     public static void log(Level logLevel, Object object)
     {
-        FMLLog.log(References.MODNAME,logLevel,String.valueOf(object));
+        FMLLog.log(References.MODNAME, logLevel, String.valueOf(object));
     }
 
     public static void all(Object object)

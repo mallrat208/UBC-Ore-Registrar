@@ -1,6 +1,7 @@
 {
-  "pack": {
-    "pack_format": 1,
-    "description": "Resources used for UBC Ore Registrar"
-  }
+    "pack":
+    {
+        "pack_format": 1,
+        "description": "Resources used for UBC Ore Registrar"
+    }
 }
