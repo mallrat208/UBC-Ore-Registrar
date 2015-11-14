@@ -31,6 +31,12 @@ public class Mods {
         Block temporalOre = GameRegistry.findBlock("clockworkphase", "oreTemporal");
         UBCHelper.registerOreBlock(temporalOre, 0, "temporal", event);
     }
+
+    public static void DeepResonance(FMLPreInitializationEvent event)
+    {
+        Block resonatingOre = GameRegistry.findBlock("deepresonance", "oreResonating");
+        UBCHelper.registerOreBlock(resonatingOre, 0, "resonating", event);
+    }
   
     public static void ElectricalAge(FMLPreInitializationEvent event)
     {
