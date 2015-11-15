@@ -37,7 +37,8 @@ public class Config {
     public static boolean ElnOres;
     public static boolean FossilOres;
     public static boolean DEOre;
-    public static boolean DROre;
+    public static boolean DeepResonanceOres;
+    public static boolean QuantumFluxOres;
 
     public static void init(File configFile)
     {
@@ -78,7 +79,9 @@ public class Config {
         ElnOres = config.getBoolean("Electrical Age Support", "Mod Support", true, "Enable UBified versions of Electrical Age's Ores (Cinnabar, Copper, Lead, Tungsten).");
         FossilOres = config.getBoolean("Fossils and Archeology Revival Support", "Mod Support", true, "Enable UBified versions of Fossils and Archeology Revival Ores (Amber, Fossils).");
         DEOre = config.getBoolean("Draconic Evolution Support", "Mod Support", true, "Enable UBified versions of Draconic Evolution's Draconium Ore.");
-        DROre = config.getBoolean("Deep Resonance Support", "Mod Support", true, "Enable UBified version of Resonating Ore from Deep Resonance");
+        DeepResonanceOres = config.getBoolean("Deep Resonance Support", "Mod Support", true, "Enable UBified version of Resonating Ore from Deep Resonance");
+        QuantumFluxOres = config.getBoolean("Quantum Flux Support", "Mod Support", true, "Enable UBified version of Titanium Ore from Quantum Flux");
+
     
         if (config.hasChanged())
         {

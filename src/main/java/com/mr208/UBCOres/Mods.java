@@ -130,6 +130,12 @@ public class Mods {
         UBCHelper.registerModOresWithMeta("ProjRed|Exploration", "projectred.exploration.ore", 0, 1, NAMES, null);
     }
 
+    public static void QuantumFlux(FMLPreInitializationEvent event)
+    {
+        Block titaniumOre = GameRegistry.findBlock("quantumflux", "titaniumOre");
+        UBCHelper.registerOreBlock(titaniumOre, 0, "titanium", event);
+    }
+
     public static void Railcraft(FMLPreInitializationEvent event)
     {
 
