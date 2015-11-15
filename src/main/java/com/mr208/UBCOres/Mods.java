@@ -38,6 +38,11 @@ public class Mods {
         UBCHelper.registerOreBlock(resonatingOre, 0, "resonating", event);
     }
   
+    public static void ElectriCraft(FMLPreInitializationEvent event) {
+        String[] NAMES = {"tin", "silver", "nickel", "aluminum", "platinum"};
+        UBCHelper.registerModOresWithMeta("ElectriCraft", "electricraft_block_ore", 1, 1, NAMES, event);
+    }
+
     public static void ElectricalAge(FMLPreInitializationEvent event)
     {
         Block elnOreBlock = GameRegistry.findBlock("Eln", "Eln.Ore");

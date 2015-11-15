@@ -47,6 +47,7 @@ public static UBCOres instance;
         if(Config.DeepResonanceOres && Loader.isModLoaded("deepresonance")) Mods.DeepResonance(event);
         if(Config.QuantumFluxOres && Loader.isModLoaded("quantumflux")) Mods.QuantumFlux(event);
         if(Config.ReactorCraftOres && Loader.isModLoaded("ReactorCraft")) Mods.ReactorCraft(event);
+        if(Config.ElectriCraftOres && Loader.isModLoaded("ElectriCraft")) Mods.ElectriCraft(event);
     }
 
     @Mod.EventHandler

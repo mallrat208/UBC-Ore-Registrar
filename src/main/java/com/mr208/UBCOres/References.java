@@ -38,5 +38,6 @@ public class References {
                                                 "after:DraconicEvolution;" +
                                                 "after:deepresonance;" +
                                                 "after:quantumflux;" +
-                                                "after:ReactorCraft";
+                                                "after:ReactorCrafti;" +
+                                                "after:ElectriCraft";
 }
