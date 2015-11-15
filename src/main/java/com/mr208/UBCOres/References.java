@@ -37,5 +37,6 @@ public class References {
                                                 "after:fossil;" +
                                                 "after:DraconicEvolution;" +
                                                 "after:deepresonance;" +
-                                                "after:quantumflux";
+                                                "after:quantumflux;" +
+                                                "after:ReactorCraft";
 }

@@ -39,6 +39,7 @@ public class Config {
     public static boolean DEOre;
     public static boolean DeepResonanceOres;
     public static boolean QuantumFluxOres;
+    public static boolean ReactorCraftOres;
 
     public static void init(File configFile)
     {
@@ -81,6 +82,7 @@ public class Config {
         DEOre = config.getBoolean("Draconic Evolution Support", "Mod Support", true, "Enable UBified versions of Draconic Evolution's Draconium Ore.");
         DeepResonanceOres = config.getBoolean("Deep Resonance Support", "Mod Support", true, "Enable UBified version of Resonating Ore from Deep Resonance");
         QuantumFluxOres = config.getBoolean("Quantum Flux Support", "Mod Support", true, "Enable UBified version of Titanium Ore from Quantum Flux");
+        ReactorCraftOres = config.getBoolean("ReactorCraft Support", "Mod Support", true, "Enable UBified versions of ReactorCraft Ores");
 
     
         if (config.hasChanged())

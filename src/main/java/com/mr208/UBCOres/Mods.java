@@ -152,6 +152,17 @@ public class Mods {
 
     }
   
+    public static void ReactorCraft(FMLPreInitializationEvent event)
+    {
+        String[] NAMES = {"pitchblende", "cadmium", "indium", "silver", };
+        UBCHelper.registerModOresWithMeta("ReactorCraft", "reactorcraft_block_ore", 1, 1, NAMES, event);
+
+        // meta 5/6 are not overworld ores
+
+        String[] NAMES2 = {"calcite", "magnetite"};
+        UBCHelper.registerModOresWithMeta("ReactorCraft", "reactorcraft_block_ore", 7, 1, NAMES2, event);
+    }
+
     public static void RFTools(FMLPreInitializationEvent event)
     {
         Block dimensionalShard = GameRegistry.findBlock("rftools", "dimensionalShardBlock");
