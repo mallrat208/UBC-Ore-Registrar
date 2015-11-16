@@ -3,6 +3,10 @@ package com.mr208.UBCOres;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
+import java.util.ArrayList;
 
 public class Mods {
 
@@ -166,6 +170,20 @@ public class Mods {
 
         String[] NAMES2 = {"calcite", "magnetite"};
         UBCHelper.registerModOresWithMeta("ReactorCraft", "reactorcraft_block_ore", 7, 1, NAMES2, event);
+
+        Block fluoriteBlock = GameRegistry.findBlock("ReactorCraft", "reactorcraft_block_fluoriteore");
+
+        // getHasSubTypes() always returns true in ReactorCraft 1.7.10-9b so we have to use the longer method.
+        Item fluoriteItem = Item.getItemFromBlock(fluoriteBlock);
+        ArrayList<ItemStack> fluoriteTypes = new ArrayList<ItemStack>();
+        fluoriteItem.getSubItems(fluoriteItem, null, fluoriteTypes);
+
+        if (fluoriteTypes.size() > 1){
+            String[] FLUORITES = {"fluorite_blue", "fluorite_pink", "fluorite_orange", "fluorite_magenta", "fluorite_green", "fluorite_red", "fluorite_white", "fluorite_yellow"};
+            UBCHelper.registerModOresWithMeta("ReactorCraft", "reactorcraft_block_fluoriteore", 0, 1, FLUORITES, event);
+        } else {
+            UBCHelper.registerOreBlock(fluoriteBlock, 0, "ubcores", "fluorite_rainbow_overlay", "fluorite_rainbow", event);
+        }
     }
 
     public static void RFTools(FMLPreInitializationEvent event)
