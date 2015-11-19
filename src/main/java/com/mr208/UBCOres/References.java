@@ -35,5 +35,9 @@ public class References {
                                                 "after:rftools;" +
                                                 "after:Eln;" +
                                                 "after:fossil;" +
-                                                "after:DraconicEvolution";
+                                                "after:DraconicEvolution;" +
+                                                "after:deepresonance;" +
+                                                "after:quantumflux;" +
+                                                "after:ReactorCrafti;" +
+                                                "after:ElectriCraft";
 }

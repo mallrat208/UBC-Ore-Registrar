@@ -44,7 +44,10 @@ public static UBCOres instance;
         if(Config.RFToolsOres && Loader.isModLoaded("rftools")) Mods.RFTools(event);
         if(Config.ElnOres && Loader.isModLoaded("Eln")) Mods.ElectricalAge(event);
         if(Config.DEOre && Loader.isModLoaded("DraconicEvolution")) Mods.DraconicEvolution(event);
-      
+        if(Config.DeepResonanceOres && Loader.isModLoaded("deepresonance")) Mods.DeepResonance(event);
+        if(Config.QuantumFluxOres && Loader.isModLoaded("quantumflux")) Mods.QuantumFlux(event);
+        if(Config.ReactorCraftOres && Loader.isModLoaded("ReactorCraft")) Mods.ReactorCraft(event);
+        if(Config.ElectriCraftOres && Loader.isModLoaded("ElectriCraft")) Mods.ElectriCraft(event);
     }
 
     @Mod.EventHandler

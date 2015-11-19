@@ -3,6 +3,10 @@ package com.mr208.UBCOres;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
+import java.util.ArrayList;
 
 public class Mods {
 
@@ -31,7 +35,18 @@ public class Mods {
         Block temporalOre = GameRegistry.findBlock("clockworkphase", "oreTemporal");
         UBCHelper.registerOreBlock(temporalOre, 0, "temporal", event);
     }
+
+    public static void DeepResonance(FMLPreInitializationEvent event)
+    {
+        Block resonatingOre = GameRegistry.findBlock("deepresonance", "oreResonating");
+        UBCHelper.registerOreBlock(resonatingOre, 0, "resonating", event);
+    }
   
+    public static void ElectriCraft(FMLPreInitializationEvent event) {
+        String[] NAMES = {"tin", "silver", "nickel", "aluminum", "platinum"};
+        UBCHelper.registerModOresWithMeta("ElectriCraft", "electricraft_block_ore", 1, 1, NAMES, event);
+    }
+
     public static void ElectricalAge(FMLPreInitializationEvent event)
     {
         Block elnOreBlock = GameRegistry.findBlock("Eln", "Eln.Ore");
@@ -124,6 +139,12 @@ public class Mods {
         UBCHelper.registerModOresWithMeta("ProjRed|Exploration", "projectred.exploration.ore", 0, 1, NAMES, null);
     }
 
+    public static void QuantumFlux(FMLPreInitializationEvent event)
+    {
+        Block titaniumOre = GameRegistry.findBlock("quantumflux", "titaniumOre");
+        UBCHelper.registerOreBlock(titaniumOre, 0, "titanium", event);
+    }
+
     public static void Railcraft(FMLPreInitializationEvent event)
     {
 
@@ -140,6 +161,31 @@ public class Mods {
 
     }
   
+    public static void ReactorCraft(FMLPreInitializationEvent event)
+    {
+        String[] NAMES = {"pitchblende", "cadmium", "indium", "silver", };
+        UBCHelper.registerModOresWithMeta("ReactorCraft", "reactorcraft_block_ore", 1, 1, NAMES, event);
+
+        // meta 5/6 are not overworld ores
+
+        String[] NAMES2 = {"calcite", "magnetite"};
+        UBCHelper.registerModOresWithMeta("ReactorCraft", "reactorcraft_block_ore", 7, 1, NAMES2, event);
+
+        Block fluoriteBlock = GameRegistry.findBlock("ReactorCraft", "reactorcraft_block_fluoriteore");
+
+        // getHasSubTypes() always returns true in ReactorCraft 1.7.10-9b so we have to use the longer method.
+        Item fluoriteItem = Item.getItemFromBlock(fluoriteBlock);
+        ArrayList<ItemStack> fluoriteTypes = new ArrayList<ItemStack>();
+        fluoriteItem.getSubItems(fluoriteItem, null, fluoriteTypes);
+
+        if (fluoriteTypes.size() > 1){
+            String[] FLUORITES = {"fluorite_blue", "fluorite_pink", "fluorite_orange", "fluorite_magenta", "fluorite_green", "fluorite_red", "fluorite_white", "fluorite_yellow"};
+            UBCHelper.registerModOresWithMeta("ReactorCraft", "reactorcraft_block_fluoriteore", 0, 1, FLUORITES, event);
+        } else {
+            UBCHelper.registerOreBlock(fluoriteBlock, 0, "ubcores", "fluorite_rainbow_overlay", "fluorite_rainbow", event);
+        }
+    }
+
     public static void RFTools(FMLPreInitializationEvent event)
     {
         Block dimensionalShard = GameRegistry.findBlock("rftools", "dimensionalShardBlock");
