@@ -108,8 +108,8 @@ public class Mods {
 
     public static void MagicalCrops(FMLPreInitializationEvent event)
     {
-        Block magCropOre = GameRegistry.findBlock("magicalcrops", "magicalcrops_EssenceOre");
-        UBCHelper.registerOreBlock(magCropOre, 0, "magicalcrops", "EssenceOre_layer", "mcEssenceOre", null);
+        Block magCropOre = GameRegistry.findBlock("magicalcrops", "MinicioOre");
+        UBCHelper.registerOreBlock(magCropOre, 0, "ubcores", "minicio_overlay", "MinicioOre", null);
     }
 
     public static void Mekanism(FMLPreInitializationEvent event)
