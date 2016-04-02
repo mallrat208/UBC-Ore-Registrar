@@ -35,8 +35,8 @@ public class Mods {
     public static void ElectricalAge(FMLPreInitializationEvent event)
     {
         Block elnOreBlock = GameRegistry.findBlock("Eln", "Eln.Ore");
-        UBCHelper.registerOreBlock(elnOreBlock, 1, "elnCopper", event);
-        String[] NAMES = {"elnLead", "elnTungsten", "elnCinnabar"};
+        UBCHelper.registerOreBlock(elnOreBlock, 1, "copper", event);
+        String[] NAMES = {"lead", "tungsten", "elnCinnabar"};
         for (int it = 0; it < NAMES.length; it++)
         {
             UBCHelper.registerOreBlock(elnOreBlock, it + 4, NAMES[it], event);
@@ -65,13 +65,13 @@ public class Mods {
     public static void FossilsAndArcheology(FMLPreInitializationEvent event)
     {
         String[] BLOCKS = {"amberOre", "fossil"};
-        String[] NAMES = {"fAmber", "fFossil"};
+        String[] NAMES = {"faaAmber", "faaFossil"};
         UBCHelper.registerModOresWithoutMeta("fossil", BLOCKS, NAMES, event);
     }
   
     public static void GalactiCraft(FMLPreInitializationEvent event)
     {
-        String Ores[] = {"galacticraftCopper", "galacticraftTin", "galacticraftAluminum", "galacticraftSilicon"};
+        String Ores[] = {"copper", "tin", "aluminum", "silicon"};
         UBCHelper.registerModOresWithMeta("GalacticraftCore", "tile.gcBlockCore", 5, 1, Ores, event);
     }
 
