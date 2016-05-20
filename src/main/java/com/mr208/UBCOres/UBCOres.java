@@ -1,11 +1,14 @@
 package com.mr208.UBCOres;
 
-import net.minecraftforge.event.world.ChunkDataEvent;
-
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+import exterminatorJeff.undergroundBiomes.common.UndergroundBiomes;
+import exterminatorJeff.undergroundBiomes.common.block.BlockUBOre;
 
 @Mod(modid = References.MODID, name = References.MODNAME, dependencies = References.DEPENDENCIES, version = References.VERSION)
 public class UBCOres {
@@ -44,6 +47,7 @@ public static UBCOres instance;
         if(Config.RFToolsOres && Loader.isModLoaded("rftools")) Mods.RFTools(event);
         if(Config.ElnOres && Loader.isModLoaded("Eln")) Mods.ElectricalAge(event);
         if(Config.DEOre && Loader.isModLoaded("DraconicEvolution")) Mods.DraconicEvolution(event);
+        if(Config.MariOre && Loader.isModLoaded("Mariculture")) Mods.Mariculture(event);
       
     }
 

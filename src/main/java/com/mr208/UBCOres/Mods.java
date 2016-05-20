@@ -207,4 +207,10 @@ public class Mods {
         UBCHelper.registerOreBlock(BLOCK, 0, "draconium", event);
     }
 
+    public static void Mariculture(FMLPreInitializationEvent event)
+    {
+        String[] NAMES = {"copper","bauxite","rutile"};
+        UBCHelper.registerModOresWithMeta("Mariculture","rocks",1,1,NAMES,event);
+    }
+
 }

@@ -4,9 +4,14 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import exterminatorJeff.undergroundBiomes.api.UBAPIHook;
 import exterminatorJeff.undergroundBiomes.api.UBOreTexturizer;
+import exterminatorJeff.undergroundBiomes.common.UndergroundBiomes;
+
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.item.ItemStack;
-import sun.rmi.log.LogHandler;
+import net.minecraft.world.World;
+
 
 public class UBCHelper {
 
