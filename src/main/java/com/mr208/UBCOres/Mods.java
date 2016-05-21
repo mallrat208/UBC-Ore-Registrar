@@ -209,8 +209,14 @@ public class Mods {
 
     public static void Mariculture(FMLPreInitializationEvent event)
     {
-        String[] NAMES = {"copper","bauxite"};
-        UBCHelper.registerModOresWithMeta("Mariculture","rocks",1,1,NAMES,event);
+        String[] NAMES = {"copper", "bauxite", "rutile"};
+        UBCHelper.registerModOresWithMeta("Mariculture", "rocks", 1, 1, NAMES, event);
+    }
+    
+    public static void DeepResonance(FMLPreInitializationEvent event)
+    {
+        Block BLOCK = GameRegistry.findBlock("deepresonance", "oreResonating");
+        UBCHelper.registerOreBlock(BLOCK, 0, "resonatingore", event);
     }
 
 }
