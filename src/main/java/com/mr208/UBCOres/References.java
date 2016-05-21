@@ -36,5 +36,6 @@ public class References {
                                                 "after:Eln;" +
                                                 "after:fossil;" +
                                                 "after:DraconicEvolution;" +
-                                                "after:Mariculture";
+                                                "after:Mariculture" +
+                                                "after:deepresonance";
 }
