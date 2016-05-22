@@ -37,5 +37,5 @@ public class References {
                                                 "after:fossil;" +
                                                 "after:DraconicEvolution;" +
                                                 "after:Mariculture;" +
-                                                "after:deepresonance";
+                                                "after:deepresonance;";
 }

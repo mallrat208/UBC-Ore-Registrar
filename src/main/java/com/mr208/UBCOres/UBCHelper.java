@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 public class UBCHelper {
 
 
-    public static void registerOreBlock(Block block, int meta,String name,FMLPreInitializationEvent event)
+    public static void registerOreBlock(Block block, int meta, String name, FMLPreInitializationEvent event)
     {
         registerOreBlock(block, meta, "ubcores", name + "_overlay", name, event);
     }
@@ -36,7 +36,7 @@ public class UBCHelper {
     }
     public static void registerModOresWithMeta(String MODID, String BLOCKNAME, int METASTART, int METASTEP, String[] ORENAMES, FMLPreInitializationEvent event)
     {
-        Block ModOreBlock = GameRegistry.findBlock(MODID,BLOCKNAME);
+        Block ModOreBlock = GameRegistry.findBlock(MODID, BLOCKNAME);
         int counter = METASTART;
         for (String Ore: ORENAMES)
         {
@@ -44,7 +44,7 @@ public class UBCHelper {
             counter = counter + METASTEP;
         }
     }
-    public static void  registerModOresWithoutMeta(String MODID, String[] BLOCKNAME, String[] NAME, FMLPreInitializationEvent event)
+    public static void registerModOresWithoutMeta(String MODID, String[] BLOCKNAME, String[] NAME, FMLPreInitializationEvent event)
     {
         if (BLOCKNAME.length != NAME.length)
         {
@@ -53,7 +53,7 @@ public class UBCHelper {
         }
         for (int Ore = 0; Ore < BLOCKNAME.length; Ore++)
         {
-            Block ModBlock = GameRegistry.findBlock(MODID,BLOCKNAME[Ore]);
+            Block ModBlock = GameRegistry.findBlock(MODID, BLOCKNAME[Ore]);
             UBCHelper.registerOreBlock(ModBlock, 0, NAME[Ore], event);
         }
     }
