@@ -105,13 +105,6 @@ public class Mods {
         UBCHelper.registerOreBlock(limsewOre, 0, "limsew", event);
     }
 
-
-    public static void MagicalCrops(FMLPreInitializationEvent event)
-    {
-        Block magCropOre = GameRegistry.findBlock("magicalcrops", "magicalcrops_EssenceOre");
-        UBCHelper.registerOreBlock(magCropOre, 0, "magicalcrops", "EssenceOre_layer", "mcEssenceOre", null);
-    }
-
     public static void Mekanism(FMLPreInitializationEvent event)
     {
         String[] NAMES = {"osmium", "copper", "tin"};
@@ -209,8 +202,20 @@ public class Mods {
 
     public static void Mariculture(FMLPreInitializationEvent event)
     {
-        String[] NAMES = {"copper","bauxite"};
-        UBCHelper.registerModOresWithMeta("Mariculture","rocks",1,1,NAMES,event);
+        String[] NAMES = {"copper", "bauxite"};
+        UBCHelper.registerModOresWithMeta("Mariculture", "rocks", 1, 1, NAMES, event);
+    }
+    
+    public static void DeepResonance(FMLPreInitializationEvent event)
+    {
+        Block BLOCK = GameRegistry.findBlock("deepresonance", "oreResonating");
+        UBCHelper.registerOreBlock(BLOCK, 0, "resonatingore", event);
+    }
+
+    public static void MagicalCrops(FMLPreInitializationEvent event)
+    {
+        Block magCropOre = GameRegistry.findBlock("magicalcrops", "magicalcrops_MinicioOre");
+        UBCHelper.registerOreBlock(magCropOre, 0, "minicio", null);
     }
 
 }

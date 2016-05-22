@@ -48,7 +48,7 @@ public static UBCOres instance;
         if(Config.ElnOres && Loader.isModLoaded("Eln")) Mods.ElectricalAge(event);
         if(Config.DEOre && Loader.isModLoaded("DraconicEvolution")) Mods.DraconicEvolution(event);
         if(Config.MariOre && Loader.isModLoaded("Mariculture")) Mods.Mariculture(event);
-      
+        if(Config.DROre && Loader.isModLoaded("deepresonance")) Mods.DeepResonance(event);
     }
 
     @Mod.EventHandler
