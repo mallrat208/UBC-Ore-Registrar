@@ -202,7 +202,7 @@ public class Mods {
 
     public static void Mariculture(FMLPreInitializationEvent event)
     {
-        String[] NAMES = {"copper", "bauxite", "rutile"};
+        String[] NAMES = {"copper", "bauxite"};
         UBCHelper.registerModOresWithMeta("Mariculture", "rocks", 1, 1, NAMES, event);
     }
     
