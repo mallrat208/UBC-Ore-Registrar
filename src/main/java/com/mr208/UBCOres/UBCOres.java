@@ -59,5 +59,6 @@ public static UBCOres instance;
         if(Config.BPOres && Loader.isModLoaded("bluepower")) Mods.BluePower(null);
         if(Config.AM2Ores && Loader.isModLoaded("arsmagica2")) Mods.ArsMag(null);
         if(Config.FossilOres && Loader.isModLoaded("fossil")) Mods.FossilsAndArcheology(null);
+        if(Config.MF2Ore && Loader.isModLoaded("minefantasy2")) Mods.MineFantasy2(null);
     }
 }

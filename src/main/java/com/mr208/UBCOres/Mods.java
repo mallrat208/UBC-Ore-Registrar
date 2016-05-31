@@ -218,4 +218,11 @@ public class Mods {
         UBCHelper.registerOreBlock(magCropOre, 0, "minicio", null);
     }
 
+    public static void MineFantasy2(FMLPreInitializationEvent event)
+    {
+        String BLOCKS[] = {"oreCopper", "oreTin", "oreSilver", "oreMythic", "oreKaolinite", "oreNitre", "oreSulfur", "oreBorax", "oreTungsten","oreCoalRich"};
+        String NAMES[] = {"copper", "tin", "silver", "mythic", "kaolinite", "niter", "mf2sulfur", "borax", "wolframite","coalrich"};
+        UBCHelper.registerModOresWithoutMeta("minefantasy2", BLOCKS, NAMES, event);
+    }
+
 }

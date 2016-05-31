@@ -39,6 +39,7 @@ public class Config {
     public static boolean DEOre;
     public static boolean MariOre;
     public static boolean DROre;
+    public static boolean MF2Ore;
     
     public static void init(File configFile)
     {
@@ -81,6 +82,7 @@ public class Config {
         DEOre = config.getBoolean("Draconic Evolution Support", "Mod Support", true, "Enable UBified versions of Draconic Evolution's Draconium Ore.");
         MariOre = config.getBoolean("Mariculture Support", "Mod Support", true, "Enable UBified versions of Mariculture's Ores (Copper, Bauxite).");
         DROre = config.getBoolean("Deep Resonance Support", "Mod Support", true, "Enable UBified version of Deep Resonance's Resonating Ore.");
+        MF2Ore = config.getBoolean("MineFantasy2 Support", "Mod Support", true, "Enable UBified versions of MineFantasy 2's Ores");
 
         if (config.hasChanged())
         {
