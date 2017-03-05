@@ -37,18 +37,36 @@ public class UBCHelper {
     }
     public enum Ores{
         ALUMINUM("aluminum"),
+        AMBER("amber"),
+        ANGLESITE("anglesite"),
+        APATITE("apatite"),
+        BENITOITE("benitiote"),
+        BIOME_ESSENCE("biome_essence"),
         CERTUS_QUARTZ("certus_quartz"),
         CERTUS_QUARTZ_CHARGED("certus_quartz_charged"),
-
         COPPER("copper"),
+        DIMENSIONAL_SHARD("dimenstional_shard"),
+        DRACONIUM("draconium"),
+        INFERIUM("inferium"),
         IRIDIUM("iridium"),
         LEAD("lead"),
+        MALACHITE("malachite"),
         MANA_INFUSED("mana_infused"),
         NICKEL("nickel"),
         OSMIUM("osmium"),
+        PERIDOT("peridot"),
         PLATINUM("platinum"),
+        PROSPERITY("prosperity"),
+        RESONATING("resonating"),
+        RUBY("ruby"),
+        SAPPHIRE("sapphire"),
         SILVER("silver"),
-        TIN("tin");
+        SULFUR("sulfur"),
+        TANZANITE("tanzanite"),
+        TIN("tin"),
+        TOPAZ("topaz"),
+        URANIUM("uranium"),
+        YELLORITE("yellorite");
 
         private String name;
 
