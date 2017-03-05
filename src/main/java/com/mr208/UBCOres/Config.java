@@ -1,8 +1,10 @@
 package com.mr208.UBCOres;
 
-import cpw.mods.fml.client.event.ConfigChangedEvent;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.client.event.ConfigChangedEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
 import java.io.File;
 
 public class Config {
@@ -93,7 +95,7 @@ public class Config {
     @SubscribeEvent
     public void onConfigurationChangedEvent(ConfigChangedEvent event)
     {
-        if(event.modID.equalsIgnoreCase(References.MODID))
+        if(event.getModID().equalsIgnoreCase(References.MODID))
         {
             loadConfig();
         }

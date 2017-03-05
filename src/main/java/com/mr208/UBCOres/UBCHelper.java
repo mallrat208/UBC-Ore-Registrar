@@ -1,60 +1,64 @@
 package com.mr208.UBCOres;
 
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
-import exterminatorJeff.undergroundBiomes.api.UBAPIHook;
-import exterminatorJeff.undergroundBiomes.api.UBOreTexturizer;
-import exterminatorJeff.undergroundBiomes.common.UndergroundBiomes;
-
 import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
-
+import net.minecraft.util.ResourceLocation;
+import exterminatorjeff.undergroundbiomes.intermod.OresRegistry;
 
 public class UBCHelper {
 
-
-    public static void registerOreBlock(Block block, int meta, String name, FMLPreInitializationEvent event)
+    public static void registerOreBlock(Block block, int meta, Ores ore)
     {
-        registerOreBlock(block, meta, "ubcores", name + "_overlay", name, event);
+        OresRegistry.INSTANCE.setupOre(block, meta);
+        OresRegistry.INSTANCE.registerOreOverlay(block, meta, ore.getTexture());
     }
+    public static void registerModOresWithMeta(String MODID, String BLOCKNAME, int METASTART, int METASTEP, Ores[] ores)
+    {
 
-    public static void registerOreBlock(Block block, int meta, String modname, String texturename, String name, FMLPreInitializationEvent event)
-    {
-        ItemStack placeholder = new ItemStack(block, 1, meta);
-        try {
-            UBAPIHook.ubAPIHook.ubOreTexturizer.setupUBOre(block, meta, modname + ":" + texturename, "ore." + name, event);
-        } catch (Exception e) {
-            if (e instanceof UBOreTexturizer.BlocksAreAlreadySet)
-                Log.error(placeholder.getDisplayName() + " is already registered with UBC. Skipping");
-            placeholder = null;
-        }
-        if (placeholder != null)
-            Log.info("Added " + placeholder.getDisplayName() + " for Underground Biomes Ore Texturization");
-    }
-    public static void registerModOresWithMeta(String MODID, String BLOCKNAME, int METASTART, int METASTEP, String[] ORENAMES, FMLPreInitializationEvent event)
-    {
-        Block ModOreBlock = GameRegistry.findBlock(MODID, BLOCKNAME);
+        Block ModOreBlock = Block.getBlockFromName(MODID+":"+BLOCKNAME);
         int counter = METASTART;
-        for (String Ore: ORENAMES)
+        for (Ores ore: ores)
         {
-            UBCHelper.registerOreBlock(ModOreBlock, counter, Ore, event);
+            UBCHelper.registerOreBlock(ModOreBlock, counter, ore);
             counter = counter + METASTEP;
         }
     }
-    public static void registerModOresWithoutMeta(String MODID, String[] BLOCKNAME, String[] NAME, FMLPreInitializationEvent event)
+    public static void registerModOresWithoutMeta(String MODID, String[] BLOCKNAME,Ores[] ores)
     {
-        if (BLOCKNAME.length != NAME.length)
+        if (BLOCKNAME.length != ores.length)
         {
             Log.error("Array Mismatch while setting up " + MODID + " Ores. Skipping.");
             return;
         }
         for (int Ore = 0; Ore < BLOCKNAME.length; Ore++)
         {
-            Block ModBlock = GameRegistry.findBlock(MODID, BLOCKNAME[Ore]);
-            UBCHelper.registerOreBlock(ModBlock, 0, NAME[Ore], event);
+            Block ModBlock = Block.getBlockFromName(MODID+":"+BLOCKNAME[Ore]);
+            UBCHelper.registerOreBlock(ModBlock, 0, ores[Ore]);
+        }
+    }
+    public enum Ores{
+        ALUMINUM("aluminum"),
+        COPPER("copper"),
+        IRIDIUM("iridium"),
+        LEAD("lead"),
+        MANA_INFUSED("mana_infused"),
+        NICKEL("nickel"),
+        OSMIUM("osmium"),
+        PLATINUM("platinum"),
+        SILVER("silver"),
+        TIN("tin");
+
+        private String name;
+
+        Ores(String oreName){
+            this.name = oreName;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public ResourceLocation getTexture() {
+            return new ResourceLocation(References.MODID + ":blocks/" + name + "_overlay");
         }
     }
 }
