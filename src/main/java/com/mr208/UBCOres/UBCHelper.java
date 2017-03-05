@@ -37,6 +37,9 @@ public class UBCHelper {
     }
     public enum Ores{
         ALUMINUM("aluminum"),
+        CERTUS_QUARTZ("certus_quartz"),
+        CERTUS_QUARTZ_CHARGED("certus_quartz_charged"),
+
         COPPER("copper"),
         IRIDIUM("iridium"),
         LEAD("lead"),

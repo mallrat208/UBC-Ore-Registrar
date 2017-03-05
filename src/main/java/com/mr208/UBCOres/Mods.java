@@ -10,4 +10,11 @@ public class Mods {
         UBCHelper.registerModOresWithMeta("thermalfoundation", "ore", 0, 1,ORES);
     }
 
+    public static void  AppliedEnergistics2()
+    {
+        Ores[] ORES = {Ores.CERTUS_QUARTZ,Ores.CERTUS_QUARTZ_CHARGED};
+        String[] BLOCKNAMES = {"quartz_ore","charged_quartz_ore"};
+        UBCHelper.registerModOresWithoutMeta("appliedenergistics2", BLOCKNAMES, ORES);
+    }
+
 }
