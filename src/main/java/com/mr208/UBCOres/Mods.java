@@ -21,9 +21,7 @@ public class Mods {
     }
 
     public static void DeepResonance(){
-        String[] BLOCKNAMES = {"resonating_ore"};
-        Ores[] ORES = {Ores.RESONATING};
-        UBCHelper.registerModOresWithoutMeta("deepresonance",BLOCKNAMES,ORES);
+        UBCHelper.registerOreBlock("deepresonance","resonating_ore",Ores.RESONATING);
     }
 
     public static void BiomesOPlenty() {
@@ -58,8 +56,7 @@ public class Mods {
     }
 
     public static void DraconicEvolution() {
-        Ores[] ORES = {Ores.DRACONIUM};
-        UBCHelper.registerModOresWithMeta("draconicevolution","draconium_ore",0,1,ORES);
+        UBCHelper.registerOreBlock("draconicevolution","draconium_ore",Ores.DRACONIUM);
     }
 
     public static void MysticalAgriculture() {
@@ -82,6 +79,10 @@ public class Mods {
     public static void Mekanism() {
         Ores[] ORES = {Ores.OSMIUM,Ores.COPPER,Ores.TIN};
         UBCHelper.registerModOresWithMeta("mekanism","OreBlock",0,1,ORES);
+    }
+
+    public static void SGCraft() {
+        UBCHelper.registerOreBlock("sgcraft","naquadahOre",Ores.NAQUADAH);
     }
 
 

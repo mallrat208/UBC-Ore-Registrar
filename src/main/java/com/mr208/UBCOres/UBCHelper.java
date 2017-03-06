@@ -11,6 +11,18 @@ public class UBCHelper {
         OresRegistry.INSTANCE.setupOre(block, meta);
         OresRegistry.INSTANCE.registerOreOverlay(block, meta, ore.getTexture());
     }
+
+    public static void registerOreBlock(Block block, Ores ore)
+    {
+        registerOreBlock(block, 0, ore);
+    }
+
+    public static void registerOreBlock(String MODID, String BLOCKNAME, Ores Ore)
+    {
+        Block ModBlock = Block.getBlockFromName(MODID + ":" + BLOCKNAME);
+        registerOreBlock(ModBlock,Ore);
+    }
+
     public static void registerModOresWithMeta(String MODID, String BLOCKNAME, int METASTART, int METASTEP, Ores[] ores)
     {
 
@@ -32,7 +44,7 @@ public class UBCHelper {
         for (int Ore = 0; Ore < BLOCKNAME.length; Ore++)
         {
             Block ModBlock = Block.getBlockFromName(MODID+":"+BLOCKNAME[Ore]);
-            UBCHelper.registerOreBlock(ModBlock, 0, ores[Ore]);
+            UBCHelper.registerOreBlock(ModBlock, ores[Ore]);
         }
     }
     public enum Ores{
@@ -56,6 +68,7 @@ public class UBCHelper {
         MALACHITE("malachite"),
         MANA_INFUSED("mana_infused"),
         MOONSTONE("moonstone"),
+        NAQUADAH("naquadah"),
         NICKEL("nickel"),
         OSMIUM("osmium"),
         PERIDOT("peridot"),

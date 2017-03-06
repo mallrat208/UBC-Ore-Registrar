@@ -26,6 +26,7 @@ public class Config {
     public static boolean RailOres;
     public static boolean RailPoorOres;
     public static boolean MekaOres;
+    public static boolean SGCores;
     
     public static void init(File configFile)
     {
@@ -53,6 +54,7 @@ public class Config {
         RailOres = config.getBoolean("Railcraft", "Mod Support", true, "Enables UBified versions of Railcraft Ores. (Copper, Tin, Lead, Silver)");
         RailPoorOres = config.getBoolean("Railcraft - Poor Ores", "Mod Support", true, "Enables UBified versions of Railcraft Poor Ores. (Poor Iron, Poor Gold, Poor Copper, Poor Tin, Poor Lead, and Poor Silver");
         MekaOres = config.getBoolean("Mekanism", "Mod Support", true, "Enables UBified versions of Mekanism Ores. (Copper, Tin, Osmium)");
+        SGCores = config.getBoolean("SGCraft","Mod Support", true, "Enables UBified versions of SGCraft Ores. (Naquadah)");
 
 
 
