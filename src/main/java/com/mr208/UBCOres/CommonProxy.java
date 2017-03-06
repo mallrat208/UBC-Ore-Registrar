@@ -36,6 +36,7 @@ public class CommonProxy {
 		if(Loader.isModLoaded("betteragriculture") && Config.BetterAgOres) Mods.BetterAgriculture();
 		if(Loader.isModLoaded("actuallyadditions") && Config.AAOres) Mods.ActuallyAdditions();
 		if(Loader.isModLoaded("scalinghealth") && Config.SHOres) Mods.ScalingHealth();
+		if(Loader.isModLoaded("hardcoreore") && Config.HCOres) Mods.HardcoreORE();
 
 	}
 }

@@ -159,4 +159,10 @@ public class Mods {
         UBCHelper.registerOreBlock("scalinghealth","CrystalOre",Ores.HEART_CRYSTAL);
     }
 
+    public static void HardcoreORE() {
+        Ores[] ORES = {Ores.ALUMINUM, Ores.NICKEL, Ores.OSMIUM, Ores.ALUMINUM, Ores.TITANIUM, Ores.PLATINUM, Ores.YELLORITE, Ores.URANIUM, Ores.LEAD, Ores.ZINC, Ores.IRIDIUM, Ores.SILVER, Ores.COPPER, Ores.TIN};
+        String[] BLOCKNAMES = {"oreBauxite","oreNickel","oreOsmium","oreAluminum","oreTitanium","ore_platinum","oreYellorium","oreUranium","oreLead","oreZinc","oreIridium","oreSilver","oreCopper","oreTin"};
+        UBCHelper.registerModOres("hardcoreore",BLOCKNAMES,ORES);
+    }
+
 }

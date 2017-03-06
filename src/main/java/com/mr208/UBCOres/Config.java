@@ -39,6 +39,7 @@ public class Config {
     public static boolean BetterAgOres;
     public static boolean AAOres;
     public static boolean SHOres;
+    public static boolean HCOres;
 
     public static void init(File configFile)
     {
@@ -80,6 +81,7 @@ public class Config {
         BetterAgOres = config.getBoolean("Better Agriculture", "Mod Support", true, "Enables UBified versions of Better Agriculture Ores. (Slate)");
         AAOres = config.getBoolean("Actually Additions", "Mod Support",true,"Enables UBified versions of Actually Additions Ores. (Black Quartz");
         SHOres = config.getBoolean("Scaling Health", "Mod Support", true, "Enables UBified versions of Scaling Health Ores. (Heart Crystal)");
+        HCOres = config.getBoolean("Hardcore ORE", "Mod Support", true, "Enables UBified versions of HardcoreOREs Ores. ()");
 
         if (config.hasChanged())
         {
