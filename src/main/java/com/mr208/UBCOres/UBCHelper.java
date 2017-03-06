@@ -61,7 +61,7 @@ public class UBCHelper {
         COBALT("cobalt"),
         COPPER("copper"),
         DILITHIUM("dilithium"),
-        DIMENSIONAL_SHARD("dimenssional_shard"),
+        DIMENSIONAL_SHARD("dimensional_shard"),
         DRACONIUM("draconium"),
         ELECTROTINE("electrotine"),
         INFERIUM("inferium"),
