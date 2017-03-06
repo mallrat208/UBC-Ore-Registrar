@@ -15,6 +15,13 @@ public class CommonProxy {
 		if(Loader.isModLoaded("biomesoplenty") && Config.BOPOres) Mods.BiomesOPlenty();
 		if(Loader.isModLoaded("immersiveengineering") && Config.IEOres) Mods.ImmersiveEngineering();
 		if(Loader.isModLoaded("forestry") && Config.ForestryOres) Mods.Forestry();
+		if(Loader.isModLoaded("embers") && Config.EmbersOres) Mods.Embers();
+		if(Loader.isModLoaded("arsmagica2") && Config.AM2Ores) Mods.ArsMagica2();
+		if(Loader.isModLoaded("magneticraft") && Config.MagniOres) Mods.Magneticraft();
+		if(Loader.isModLoaded("draconicevolution") && Config.DEOres) Mods.DraconicEvolution();
+		if(Loader.isModLoaded("mysticalagriculture") && Config.MAOres) Mods.MysticalAgriculture();
+		if(Loader.isModLoaded("railcraft") && Config.RailOres) Mods.Railcraft();
+		if(Loader.isModLoaded("railcraft") && Config.RailPoorOres) Mods.RailcraftPoorOres();
 
 	}
 }

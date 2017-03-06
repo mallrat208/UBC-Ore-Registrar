@@ -70,9 +70,13 @@ public class Mods {
 
     public static void Railcraft() {
         Ores[] ORES = {Ores.COPPER,Ores.TIN,Ores.LEAD,Ores.SILVER};
-        Ores[] ORES_POOR = {Ores.POOR_IRON, Ores.POOR_GOLD, Ores.POOR_COPPER, Ores.POOR_TIN, Ores.POOR_LEAD,Ores.POOR_SILVER};
         UBCHelper.registerModOresWithMeta("railcraft","ore",11,1,ORES);
-        UBCHelper.registerModOresWithMeta("railcraft","ore",5,1,ORES_POOR);
+
+    }
+
+    public static void RailcraftPoorOres() {
+        Ores[] ORES = {Ores.POOR_IRON, Ores.POOR_GOLD, Ores.POOR_COPPER, Ores.POOR_TIN, Ores.POOR_LEAD,Ores.POOR_SILVER};
+        UBCHelper.registerModOresWithMeta("railcraft","ore",5,1,ORES);
     }
 
 
