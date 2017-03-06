@@ -25,6 +25,7 @@ public class CommonProxy {
 		if(Loader.isModLoaded("sgcraft") && Config.SGCores) Mods.SGCraft();
 		if(Loader.isModLoaded("rftools") && Config.RFTOres) Mods.RFTools();
 		if(Loader.isModLoaded("advancedrocketry") && Config.AROres) Mods.AdvancedRocketry();
+		if(Loader.isModLoaded("projectred-exploration") && Config.PREOres) Mods.ProjectRedExploration();
 
 	}
 }

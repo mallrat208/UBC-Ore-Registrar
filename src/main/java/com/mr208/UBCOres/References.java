@@ -21,5 +21,6 @@ public class References {
                                                 "after:mysticalagriculture;" +
                                                 "after:railcraft;" +
                                                 "after:mekanism;" +
-                                                "after:advancedrocketry";
+                                                "after:advancedrocketry;" +
+                                                "after:projectred-exploration";
 }

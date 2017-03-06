@@ -63,6 +63,7 @@ public class UBCHelper {
         DILITHIUM("dilithium"),
         DIMENSIONAL_SHARD("dimenssional_shard"),
         DRACONIUM("draconium"),
+        ELECTROTINE("electrotine"),
         INFERIUM("inferium"),
         IRIDIUM("iridium"),
         LEAD("lead"),

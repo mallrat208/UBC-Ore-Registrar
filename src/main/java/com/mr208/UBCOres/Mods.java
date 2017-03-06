@@ -98,6 +98,11 @@ public class Mods {
 
     }
 
+    public static void ProjectRedExploration() {
+        Ores[] ORES = {Ores.RUBY, Ores.SAPPHIRE, Ores.PERIDOT, Ores.COPPER, Ores.TIN, Ores.SILVER, Ores.LEAD};
+        UBCHelper.registerModOresWithMeta("projectred-exploration","ore",0,1,ORES);
+    }
+
 
 
 
