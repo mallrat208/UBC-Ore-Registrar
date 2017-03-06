@@ -79,6 +79,11 @@ public class Mods {
         UBCHelper.registerModOresWithMeta("railcraft","ore",5,1,ORES);
     }
 
+    public static void Mekanism() {
+        Ores[] ORES = {Ores.OSMIUM,Ores.COPPER,Ores.TIN};
+        UBCHelper.registerModOresWithMeta("mekanism","OreBlock",0,1,ORES);
+    }
+
 
 
 

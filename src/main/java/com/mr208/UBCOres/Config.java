@@ -25,6 +25,7 @@ public class Config {
     public static boolean MAOres;
     public static boolean RailOres;
     public static boolean RailPoorOres;
+    public static boolean MekaOres;
     
     public static void init(File configFile)
     {
@@ -51,7 +52,7 @@ public class Config {
         MAOres = config.getBoolean("Mystical Agriculture", "Mod Support", true, "Enable UBified versions of Mystical Agriculture Ores. (Prosperity and Inferium)");
         RailOres = config.getBoolean("Railcraft", "Mod Support", true, "Enables UBified versions of Railcraft Ores. (Copper, Tin, Lead, Silver)");
         RailPoorOres = config.getBoolean("Railcraft - Poor Ores", "Mod Support", true, "Enables UBified versions of Railcraft Poor Ores. (Poor Iron, Poor Gold, Poor Copper, Poor Tin, Poor Lead, and Poor Silver");
-
+        MekaOres = config.getBoolean("Mekanism", "Mod Support", true, "Enables UBified versions of Mekanism Ores. (Copper, Tin, Osmium)");
 
 
 

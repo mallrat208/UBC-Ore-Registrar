@@ -19,5 +19,6 @@ public class References {
                                                 "after:magneticraft;" +
                                                 "after:draconicevolution;" +
                                                 "after:mysticalagriculture;" +
-                                                "after:railcraft";
+                                                "after:railcraft;" +
+                                                "after:mekanism";
 }

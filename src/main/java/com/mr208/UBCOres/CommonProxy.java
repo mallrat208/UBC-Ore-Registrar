@@ -21,6 +21,7 @@ public class CommonProxy {
 		if(Loader.isModLoaded("mysticalagriculture") && Config.MAOres) Mods.MysticalAgriculture();
 		if(Loader.isModLoaded("railcraft") && Config.RailOres) Mods.Railcraft();
 		if(Loader.isModLoaded("railcraft") && Config.RailPoorOres) Mods.RailcraftPoorOres();
+		if(Loader.isModLoaded("mekanism") && Config.MekaOres) Mods.Mekanism();
 
 	}
 }
