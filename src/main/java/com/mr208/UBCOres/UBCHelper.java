@@ -2,39 +2,37 @@ package com.mr208.UBCOres;
 
 import net.minecraft.block.Block;
 import net.minecraft.util.ResourceLocation;
+
 import exterminatorjeff.undergroundbiomes.intermod.OresRegistry;
 
 public class UBCHelper {
 
-    public static void registerOreBlock(Block block, int meta, Ores ore)
+    public static void registerOreBlock(String MODID, String BLOCKNAME, int meta, Ores ore)
     {
-        OresRegistry.INSTANCE.setupOre(block, meta);
-        OresRegistry.INSTANCE.registerOreOverlay(block, meta, ore.getTexture());
-    }
-
-    public static void registerOreBlock(Block block, Ores ore)
-    {
-        registerOreBlock(block, 0, ore);
+        Block OreBlock = Block.getBlockFromName(MODID+":"+BLOCKNAME);
+        if(OreBlock!=null) {
+            OresRegistry.INSTANCE.setupOre(OreBlock, meta);
+            OresRegistry.INSTANCE.registerOreOverlay(OreBlock, meta, ore.getTexture());
+        } else {
+            Log.error("Skipping Ore: Unable to find Block for <"+MODID+":"+BLOCKNAME+":"+meta+">");
+        }
     }
 
     public static void registerOreBlock(String MODID, String BLOCKNAME, Ores Ore)
     {
-        Block ModBlock = Block.getBlockFromName(MODID + ":" + BLOCKNAME);
-        registerOreBlock(ModBlock,Ore);
+        registerOreBlock(MODID, BLOCKNAME, 0, Ore);
     }
 
-    public static void registerModOresWithMeta(String MODID, String BLOCKNAME, int METASTART, int METASTEP, Ores[] ores)
+    public static void registerModOres(String MODID, String BLOCKNAME, int METASTART, int METASTEP, Ores[] ores)
     {
-
-        Block ModOreBlock = Block.getBlockFromName(MODID+":"+BLOCKNAME);
         int counter = METASTART;
         for (Ores ore: ores)
         {
-            UBCHelper.registerOreBlock(ModOreBlock, counter, ore);
+            UBCHelper.registerOreBlock(MODID,BLOCKNAME,counter,ore);
             counter = counter + METASTEP;
         }
     }
-    public static void registerModOresWithoutMeta(String MODID, String[] BLOCKNAME,Ores[] ores)
+    public static void registerModOres(String MODID, String[] BLOCKNAME,Ores[] ores)
     {
         if (BLOCKNAME.length != ores.length)
         {
@@ -43,8 +41,7 @@ public class UBCHelper {
         }
         for (int Ore = 0; Ore < BLOCKNAME.length; Ore++)
         {
-            Block ModBlock = Block.getBlockFromName(MODID+":"+BLOCKNAME[Ore]);
-            UBCHelper.registerOreBlock(ModBlock, ores[Ore]);
+            UBCHelper.registerOreBlock(MODID, BLOCKNAME[Ore],ores[Ore]);
         }
     }
     public enum Ores{
@@ -55,6 +52,7 @@ public class UBCHelper {
         BEEF("beef"),
         BENITOITE("benitiote"),
         BIOME_ESSENCE("biome_essence"),
+        BLACK_QUARTZ("black_quartz"),
         BLUE_TOPAZ("blue_topaz"),
         BONE("bone"),
         CADMIUM("cadmium"),
@@ -76,6 +74,7 @@ public class UBCHelper {
         FLINT("flint"),
         GALENA("galena"),
         GALVANIZED_STEEL("galvanized_steel"),
+        HEART_CRYSTAL("heart_crystal"),
         INFERIUM("inferium"),
         IRIDIUM("iridium"),
         LEAD("lead"),
@@ -90,6 +89,7 @@ public class UBCHelper {
         NATIVE_COPPER("native_copper"),
         NICHROME("nichrome"),
         NICKEL("nickel"),
+        NITER("niter"),
         OSMIUM("osmium"),
         PERIDOT("peridot"),
         PLATINUM("platinum"),
@@ -109,6 +109,7 @@ public class UBCHelper {
         RUBY("ruby"),
         SAPPHIRE("sapphire"),
         SILVER("silver"),
+        SLATE("slate"),
         SLIME("slime"),
         STAINLESS_STEEL("stainless_steel"),
         SULFUR("sulfur"),

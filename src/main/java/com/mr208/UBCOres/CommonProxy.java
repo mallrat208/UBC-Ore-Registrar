@@ -32,7 +32,10 @@ public class CommonProxy {
 		if(Loader.isModLoaded("modernmetals") && Config.MMOres) Mods.ModernMetals();
 		if(Loader.isModLoaded("substratum") && Config.SubOres) Mods.Substratum();
 		if(Loader.isModLoaded("utilitybaseores") && Config.UBOres) Mods.UtilityBaseOres();
-
+		if(Loader.isModLoaded("druidry") && Config.DruidOres) Mods.Druidry();
+		if(Loader.isModLoaded("betteragriculture") && Config.BetterAgOres) Mods.BetterAgriculture();
+		if(Loader.isModLoaded("actuallyadditions") && Config.AAOres) Mods.ActuallyAdditions();
+		if(Loader.isModLoaded("scalinghealth") && Config.SHOres) Mods.ScalingHealth();
 
 	}
 }

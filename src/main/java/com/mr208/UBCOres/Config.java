@@ -35,7 +35,11 @@ public class Config {
     public static boolean MMOres;
     public static boolean SubOres;
     public static boolean UBOres;
-    
+    public static boolean DruidOres;
+    public static boolean BetterAgOres;
+    public static boolean AAOres;
+    public static boolean SHOres;
+
     public static void init(File configFile)
     {
         if(config == null)
@@ -72,6 +76,10 @@ public class Config {
         MMOres = config.getBoolean("Modern Metals", "Mod Support", true, "Enables UBified versions of Modern Metals Ore. ()");
         SubOres = config.getBoolean("Substratum", "Mod Support", true, "Enables UBified versions of Substratum Ore. ()");
         UBOres = config.getBoolean("Utility Base Ores", "Mod Support", true, "Enables UBified versions of Utility Base Ores. ()");
+        DruidOres = config.getBoolean("Druidry", "Mod Support", true, "Enables UBified versions of Druidry Ores. (Silver)");
+        BetterAgOres = config.getBoolean("Better Agriculture", "Mod Support", true, "Enables UBified versions of Better Agriculture Ores. (Slate)");
+        AAOres = config.getBoolean("Actually Additions", "Mod Support",true,"Enables UBified versions of Actually Additions Ores. (Black Quartz");
+        SHOres = config.getBoolean("Scaling Health", "Mod Support", true, "Enables UBified versions of Scaling Health Ores. (Heart Crystal)");
 
         if (config.hasChanged())
         {
