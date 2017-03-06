@@ -31,6 +31,10 @@ public class Config {
     public static boolean PREOres;
     public static boolean CrossOres;
     public static boolean TROres;
+    public static boolean BMOres;
+    public static boolean MMOres;
+    public static boolean SubOres;
+    public static boolean UBOres;
     
     public static void init(File configFile)
     {
@@ -64,6 +68,10 @@ public class Config {
         PREOres = config.getBoolean("Project Red | Exploration", "Mod Support", true, "Enables UBified versions of Project Red | Exploration Ores. (Ruby, Sapphire, Peridot, Copper, Tin, Silver, and Lead)");
         CrossOres = config.getBoolean("Crossroads", "Mod Support", true, "Enables UBified versions of Crossroads Ores. (Tin, Copper, and Native Copper");
         TROres = config.getBoolean("TechReborn", "Mod Support", true, "Enables UBified versions of TechReborn Ores.()");
+        BMOres = config.getBoolean("Base Metals", "Mod Support", true, "Enables UBified versions of Base Metal Ores. ()");
+        MMOres = config.getBoolean("Modern Metals", "Mod Support", true, "Enables UBified versions of Modern Metals Ore. ()");
+        SubOres = config.getBoolean("Substratum", "Mod Support", true, "Enables UBified versions of Substratum Ore. ()");
+        UBOres = config.getBoolean("Utility Base Ores", "Mod Support", true, "Enables UBified versions of Utility Base Ores. ()");
 
         if (config.hasChanged())
         {

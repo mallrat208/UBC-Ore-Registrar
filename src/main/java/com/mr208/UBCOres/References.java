@@ -22,5 +22,9 @@ public class References {
                                                 "after:railcraft;" +
                                                 "after:mekanism;" +
                                                 "after:advancedrocketry;" +
-                                                "after:projectred-exploration";
+                                                "after:projectred-exploration;" +
+                                                "after:basemetals;" +
+                                                "after:modernmetals;" +
+                                                "after:substratum;" +
+                                                "after:utilitybaseores";
 }

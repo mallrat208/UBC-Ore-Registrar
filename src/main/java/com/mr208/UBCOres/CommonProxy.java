@@ -28,6 +28,11 @@ public class CommonProxy {
 		if(Loader.isModLoaded("projectred-exploration") && Config.PREOres) Mods.ProjectRedExploration();
 		if(Loader.isModLoaded("crossroads") && Config.CrossOres) Mods.Crossroads();
 		if(Loader.isModLoaded("techreborn") && Config.TROres) Mods.TechReborn();
+		if(Loader.isModLoaded("basemetals") && Config.BMOres) Mods.BaseMetals();
+		if(Loader.isModLoaded("modernmetals") && Config.MMOres) Mods.ModernMetals();
+		if(Loader.isModLoaded("substratum") && Config.SubOres) Mods.Substratum();
+		if(Loader.isModLoaded("utilitybaseores") && Config.UBOres) Mods.UtilityBaseOres();
+
 
 	}
 }

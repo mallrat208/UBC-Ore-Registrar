@@ -104,7 +104,7 @@ public class Mods {
     }
 
     public static void Crossroads() {
-        Ores[] ORES = {Ores.TIN, Ores.COPPER, Ores.COPPER};
+        Ores[] ORES = {Ores.TIN, Ores.COPPER, Ores.NATIVE_COPPER};
         String[] BLOCKNAMES = {"oreTin", "oreCopper", "oreNativeCopper"};
         UBCHelper.registerModOresWithoutMeta("crossroads",BLOCKNAMES,ORES);
     }
@@ -116,6 +116,29 @@ public class Mods {
         UBCHelper.registerModOresWithMeta("techreborn","techreborn.ore",12,1,ORES);
         ORES = new Ores[] {Ores.COPPER, Ores.TIN, Ores.NICKEL};
         UBCHelper.registerModOresWithMeta("techreborn","techreborn.ore2",0,1,ORES);
+    }
+
+    public static void BaseMetals() {
+        Ores[] ORES = {Ores.COPPER,Ores.LEAD,Ores.MERCURY,Ores.NICKEL, Ores.PLATINUM, Ores.SILVER, Ores.TIN, Ores.ZINC};
+        String[] BLOCKNAMES = {"copper_ore","lead_ore","mercury_ore","nickel_ore","platinum_ore","silver_ore","tin_ore","zinc_ore"};
+        UBCHelper.registerModOresWithoutMeta("basemetals",BLOCKNAMES,ORES);
+    }
+
+    public static void ModernMetals() {
+        Ores[] ORES = {Ores.ALUMINUM, Ores.CADMIUM, Ores.CHROMIUM, Ores.GALVANIZED_STEEL,Ores.IRIDIUM, Ores.MAGNESIUM, Ores.MANGANESE, Ores.NICHROME, Ores.OSMIUM,Ores.PLUTONIUM, Ores.TUNGSTEN, Ores.STAINLESS_STEEL, Ores.TANTALUM, Ores.TITANIUM, Ores.TUNGSTEN, Ores.URANIUM, Ores.ZIRCONIUM};
+        String[] BLOCKNAMES = {"aluminum_ore","cadmium_ore","chromium_ore","galvanizedsteel_ore","iridium_ore","magnesium_ore","manganese_ore","nichrome_ore","osmium_ore","plutonium_ore","rutile_ore","stainlesssteel_ore","tantalum_ore", "titanium_ore","tungsten_ore","uranium_ore","zirconium_ore"};
+        UBCHelper.registerModOresWithoutMeta("modernmetals", BLOCKNAMES, ORES);
+    }
+
+    public static void Substratum() {
+        Ores[] ORES = {Ores.COPPER, Ores.TIN, Ores.NICKEL, Ores.ZINC, Ores.SILVER, Ores.LEAD, Ores.PLATINUM,Ores.ALUMINUM, Ores.CHROMIUM};
+        UBCHelper.registerModOresWithMeta("substratum","ore",0,1,ORES);
+    }
+
+    public static void UtilityBaseOres() {
+        Ores[] ORES = {Ores.FEATHER, Ores.BONE, Ores.ROTTEN, Ores.PRISMARINE, Ores.ENDER,Ores.SLIME, Ores.FLINT, Ores.CARROT, Ores.MELON, Ores.POTATO, Ores.CHICKEN, Ores.BEEF, Ores.PORKCHOP, Ores.FISH};
+        String[] BLOCKNAMES = {"feather_ore","bone_ore","rotten_ore","prismarine_ore","ender_ore","slime_ore","flint_ore","carrot_ore","melon_ore","potato_ore","chicken_ore","beef_ore","porkchop_ore","fish_ore"};
+        UBCHelper.registerModOresWithoutMeta("utilitybaseores",BLOCKNAMES,ORES);
     }
 
 
