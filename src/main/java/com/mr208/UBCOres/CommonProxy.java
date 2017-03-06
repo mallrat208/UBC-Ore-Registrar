@@ -24,6 +24,7 @@ public class CommonProxy {
 		if(Loader.isModLoaded("mekanism") && Config.MekaOres) Mods.Mekanism();
 		if(Loader.isModLoaded("sgcraft") && Config.SGCores) Mods.SGCraft();
 		if(Loader.isModLoaded("rftools") && Config.RFTOres) Mods.RFTools();
+		if(Loader.isModLoaded("advancedrocketry") && Config.AROres) Mods.AdvancedRocketry();
 
 	}
 }

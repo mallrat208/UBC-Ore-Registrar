@@ -28,6 +28,7 @@ public class Config {
     public static boolean MekaOres;
     public static boolean SGCores;
     public static boolean RFTOres;
+    public static boolean AROres;
     
     public static void init(File configFile)
     {
@@ -57,7 +58,7 @@ public class Config {
         MekaOres = config.getBoolean("Mekanism", "Mod Support", true, "Enables UBified versions of Mekanism Ores. (Copper, Tin, Osmium)");
         SGCores = config.getBoolean("SGCraft","Mod Support", true, "Enables UBified versions of SGCraft Ores. (Naquadah)");
         RFTOres = config.getBoolean("RFTools", "Mod Support", true, "Enables UBified versions of RFTools Ores. (Dimensional Shards)");
-
+        AROres = config.getBoolean("Advanced Rocketry", "Mod Support", true, "Enables UBified versions of Adv. Rocketry Ores. (Dilithium, Copper, Tin, Titanium, Aluminum, Iridium");
 
 
         if (config.hasChanged())

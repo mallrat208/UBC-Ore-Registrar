@@ -89,6 +89,15 @@ public class Mods {
         UBCHelper.registerOreBlock("rftools","dimensional_shard_ore",Ores.DIMENSIONAL_SHARD);
     }
 
+    public static void AdvancedRocketry() {
+        UBCHelper.registerOreBlock("libvulpes","ore0",Ores.DILITHIUM);
+        Ores[] ORES = {Ores.COPPER, Ores.TIN};
+        UBCHelper.registerModOresWithMeta("libvulpes","ore0",4,1,ORES);
+        ORES = new Ores[] {Ores.TITANIUM, Ores.ALUMINUM, Ores.IRIDIUM};
+        UBCHelper.registerModOresWithMeta("libvulpes","ore0",8,1,ORES);
+
+    }
+
 
 
 
