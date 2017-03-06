@@ -26,6 +26,8 @@ public class CommonProxy {
 		if(Loader.isModLoaded("rftools") && Config.RFTOres) Mods.RFTools();
 		if(Loader.isModLoaded("advancedrocketry") && Config.AROres) Mods.AdvancedRocketry();
 		if(Loader.isModLoaded("projectred-exploration") && Config.PREOres) Mods.ProjectRedExploration();
+		if(Loader.isModLoaded("crossroads") && Config.CrossOres) Mods.Crossroads();
+		if(Loader.isModLoaded("techreborn") && Config.TROres) Mods.TechReborn();
 
 	}
 }

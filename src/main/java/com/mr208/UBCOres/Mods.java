@@ -99,10 +99,24 @@ public class Mods {
     }
 
     public static void ProjectRedExploration() {
-        Ores[] ORES = {Ores.RUBY, Ores.SAPPHIRE, Ores.PERIDOT, Ores.COPPER, Ores.TIN, Ores.SILVER, Ores.LEAD};
+        Ores[] ORES = {Ores.RUBY, Ores.SAPPHIRE, Ores.PERIDOT, Ores.COPPER, Ores.TIN, Ores.SILVER, Ores.ELECTROTINE};
         UBCHelper.registerModOresWithMeta("projectred-exploration","ore",0,1,ORES);
     }
 
+    public static void Crossroads() {
+        Ores[] ORES = {Ores.TIN, Ores.COPPER, Ores.COPPER};
+        String[] BLOCKNAMES = {"oreTin", "oreCopper", "oreNativeCopper"};
+        UBCHelper.registerModOresWithoutMeta("crossroads",BLOCKNAMES,ORES);
+    }
+
+    public static void TechReborn() {
+        Ores[] ORES = {Ores.GALENA, Ores.IRIDIUM, Ores.RUBY, Ores.SAPPHIRE, Ores.ALUMINUM};
+        UBCHelper.registerModOresWithMeta("techreborn","techreborn.ore",0,1,ORES);
+        ORES = new Ores[] {Ores.LEAD,Ores.SILVER};
+        UBCHelper.registerModOresWithMeta("techreborn","techreborn.ore",12,1,ORES);
+        ORES = new Ores[] {Ores.COPPER, Ores.TIN, Ores.NICKEL};
+        UBCHelper.registerModOresWithMeta("techreborn","techreborn.ore2",0,1,ORES);
+    }
 
 
 

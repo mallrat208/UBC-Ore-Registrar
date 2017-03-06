@@ -4,7 +4,6 @@ package com.mr208.UBCOres;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
 import java.io.File;
 
 public class Config {
@@ -30,6 +29,8 @@ public class Config {
     public static boolean RFTOres;
     public static boolean AROres;
     public static boolean PREOres;
+    public static boolean CrossOres;
+    public static boolean TROres;
     
     public static void init(File configFile)
     {
@@ -61,6 +62,8 @@ public class Config {
         RFTOres = config.getBoolean("RFTools", "Mod Support", true, "Enables UBified versions of RFTools Ores. (Dimensional Shards)");
         AROres = config.getBoolean("Advanced Rocketry", "Mod Support", true, "Enables UBified versions of Adv. Rocketry Ores. (Dilithium, Copper, Tin, Titanium, Aluminum, and Iridium");
         PREOres = config.getBoolean("Project Red | Exploration", "Mod Support", true, "Enables UBified versions of Project Red | Exploration Ores. (Ruby, Sapphire, Peridot, Copper, Tin, Silver, and Lead)");
+        CrossOres = config.getBoolean("Crossroads", "Mod Support", true, "Enables UBified versions of Crossroads Ores. (Tin, Copper, and Native Copper");
+        TROres = config.getBoolean("TechReborn", "Mod Support", true, "Enables UBified versions of TechReborn Ores.()");
 
         if (config.hasChanged())
         {
