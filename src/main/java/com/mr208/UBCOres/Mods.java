@@ -85,6 +85,10 @@ public class Mods {
         UBCHelper.registerOreBlock("sgcraft","naquadahOre",Ores.NAQUADAH);
     }
 
+    public static void RFTools() {
+        UBCHelper.registerOreBlock("rftools","dimensional_shard_ore",Ores.DIMENSIONAL_SHARD);
+    }
+
 
 
 

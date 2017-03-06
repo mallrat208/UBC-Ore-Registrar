@@ -23,6 +23,7 @@ public class CommonProxy {
 		if(Loader.isModLoaded("railcraft") && Config.RailPoorOres) Mods.RailcraftPoorOres();
 		if(Loader.isModLoaded("mekanism") && Config.MekaOres) Mods.Mekanism();
 		if(Loader.isModLoaded("sgcraft") && Config.SGCores) Mods.SGCraft();
+		if(Loader.isModLoaded("rftools") && Config.RFTOres) Mods.RFTools();
 
 	}
 }
