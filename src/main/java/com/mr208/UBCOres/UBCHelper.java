@@ -60,7 +60,7 @@ public class UBCHelper {
         CHIMERITE("chimerite"),
         COBALT("cobalt"),
         COPPER("copper"),
-        DIMENSIONAL_SHARD("dimenstional_shard"),
+        DIMENSIONAL_SHARD("dimenssional_shard"),
         DRACONIUM("draconium"),
         INFERIUM("inferium"),
         IRIDIUM("iridium"),
