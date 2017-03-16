@@ -11,7 +11,7 @@ public class CommonProxy {
 		if(Loader.isModLoaded("appliedenergistics2") && Config.AE2Ores) Mods.AppliedEnergistics2();
 		if(Loader.isModLoaded("deepresonance") && Config.DROres) Mods.DeepResonance();
 		if(Loader.isModLoaded("bigreactors") && Config.BROres) Mods.BigReactors();
-		if(Loader.isModLoaded("biomesoplenty") && Config.BOPOres) Mods.BiomesOPlenty();
+		if(Loader.isModLoaded("BiomesOPlenty") && Config.BOPOres) Mods.BiomesOPlenty();
 		if(Loader.isModLoaded("immersiveengineering") && Config.IEOres) Mods.ImmersiveEngineering();
 		if(Loader.isModLoaded("forestry") && Config.ForestryOres) Mods.Forestry();
 		if(Loader.isModLoaded("embers") && Config.EmbersOres) Mods.Embers();
@@ -37,6 +37,6 @@ public class CommonProxy {
 		if(Loader.isModLoaded("actuallyadditions") && Config.AAOres) Mods.ActuallyAdditions();
 		if(Loader.isModLoaded("scalinghealth") && Config.SHOres) Mods.ScalingHealth();
 		if(Loader.isModLoaded("hardcoreore") && Config.HCOres) Mods.HardcoreORE();
-
+		if(Loader.isModLoaded("taiga") && Config.TAIOres) Mods.TAIGA();
 	}
 }

@@ -40,6 +40,7 @@ public class Config {
     public static boolean AAOres;
     public static boolean SHOres;
     public static boolean HCOres;
+    public static boolean TAIOres;
 
     public static void init(File configFile)
     {
@@ -82,6 +83,7 @@ public class Config {
         AAOres = config.getBoolean("Actually Additions", "Mod Support",true,"Enables UBified versions of Actually Additions Ores. (Black Quartz");
         SHOres = config.getBoolean("Scaling Health", "Mod Support", true, "Enables UBified versions of Scaling Health Ores. (Heart Crystal)");
         HCOres = config.getBoolean("Hardcore ORE", "Mod Support", true, "Enables UBified versions of HardcoreOREs Ores. ()");
+        TAIOres = config.getBoolean("TAIGA", "Mod Support", true, "Enables UBified versions of select TAIGA Ores (Dilithium, Vibranium)");
 
         if (config.hasChanged())
         {

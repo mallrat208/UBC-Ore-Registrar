@@ -1,5 +1,7 @@
 package com.mr208.UBCOres;
 
+import net.minecraft.util.ResourceLocation;
+
 import com.mr208.UBCOres.UBCHelper.Ores;
 
 public class Mods {
@@ -36,7 +38,7 @@ public class Mods {
 
     public static void BigReactors() {
         Ores[] ORES = {Ores.YELLORITE};
-        UBCHelper.registerModOres("bigreactors","brore",0,1,ORES);
+        UBCHelper.registerOreBlock("bigreactors","brore",Ores.YELLORITE);
     }
 
     public static void Embers() {
@@ -152,7 +154,7 @@ public class Mods {
     }
 
     public static void ActuallyAdditions() {
-        UBCHelper.registerModOres("actuallyadditions","blockMisc",3,1,new Ores[]{Ores.BLACK_QUARTZ});
+        UBCHelper.registerOreBlock("actuallyadditions","blockMisck",3,Ores.BLACK_QUARTZ);
     }
 
     public static void ScalingHealth() {
@@ -161,8 +163,15 @@ public class Mods {
 
     public static void HardcoreORE() {
         Ores[] ORES = {Ores.ALUMINUM, Ores.NICKEL, Ores.OSMIUM, Ores.ALUMINUM, Ores.TITANIUM, Ores.PLATINUM, Ores.YELLORITE, Ores.URANIUM, Ores.LEAD, Ores.ZINC, Ores.IRIDIUM, Ores.SILVER, Ores.COPPER, Ores.TIN};
-        String[] BLOCKNAMES = {"oreBauxite","oreNickel","oreOsmium","oreAluminum","oreTitanium","ore_platinum","oreYellorium","oreUranium","oreLead","oreZinc","oreIridium","oreSilver","oreCopper","oreTin"};
+        String[] BLOCKNAMES = {"oreBauxite","oreNickel","oreOsmium","oreAluminum","oreTitanium","ore_platinum","oreYellorium","oreUranium","oreLead","ore_zinc","oreIridium","oreSilver","oreCopper","oreTin"};
         UBCHelper.registerModOres("hardcoreore",BLOCKNAMES,ORES);
     }
 
+    public static void TAIGA() {
+        Ores[] ORES = {Ores.DILITHIUM,Ores.VIBRANIUM};
+        String[] BLOCKNAMES = {"dilithium_ore","vibranium_ore"};
+        UBCHelper.registerModOres("taiga",BLOCKNAMES,ORES);
+
+        new ResourceLocation("a","b");
+    }
 }
