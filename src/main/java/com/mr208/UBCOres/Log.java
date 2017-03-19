@@ -1,13 +1,16 @@
 package com.mr208.UBCOres;
 
-import cpw.mods.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Log {
 
+    private static final Logger LOGGER = LogManager.getLogger(References.MODID);
+
     public static void log(Level logLevel, Object object)
     {
-        FMLLog.log(References.MODNAME, logLevel, String.valueOf(object));
+        LOGGER.log(logLevel, object);
     }
 
     public static void all(Object object)

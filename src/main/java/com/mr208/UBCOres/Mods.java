@@ -1,221 +1,177 @@
 package com.mr208.UBCOres;
 
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.Block;
+import net.minecraft.util.ResourceLocation;
+
+import com.mr208.UBCOres.UBCHelper.Ores;
 
 public class Mods {
 
-    public static void AE2(FMLPreInitializationEvent event)
-    {
-        String[] BLOCKS = {"tile.OreQuartz", "tile.OreQuartzCharged"};
-        String[] NAMES = {"certus", "certusCharged"};
-        UBCHelper.registerModOresWithoutMeta("appliedenergistics2", BLOCKS, NAMES, event);
+    public static void ThermalFoundation() {
+        Ores[] ORES = {Ores.COPPER, Ores.TIN, Ores.SILVER, Ores.LEAD, Ores.ALUMINUM, Ores.NICKEL, Ores.PLATINUM, Ores.IRIDIUM, Ores.MANA_INFUSED};
+        UBCHelper.registerModOres("thermalfoundation", "ore", 0, 1,ORES);
     }
 
-    public static void BigReactors(FMLPreInitializationEvent event)
-    {
-        Block BLOCK = GameRegistry.findBlock("BigReactors", "YelloriteOre");
-        UBCHelper.registerOreBlock(BLOCK, 0, "yellorite", event);
+    public static void  AppliedEnergistics2() {
+        Ores[] ORES = {Ores.CERTUS_QUARTZ,Ores.CERTUS_QUARTZ_CHARGED};
+        String[] BLOCKNAMES = {"quartz_ore","charged_quartz_ore"};
+        UBCHelper.registerModOres("appliedenergistics2", BLOCKNAMES, ORES);
     }
 
-    public static void BOP(FMLPreInitializationEvent event)
-    {
-        String NAMES[] = {"ruby","peridot","topaz", "tanzanite", "malachite", "sapphire", "amber"};
-        UBCHelper.registerModOresWithMeta("BiomesOPlenty", "gemOre", 2, 2, NAMES, event);
-    }
-  
-    //NOTE: Temporal ore doesn't spawn naturally
-    public static void ClockworkPhase(FMLPreInitializationEvent event)
-    {
-        Block temporalOre = GameRegistry.findBlock("clockworkphase", "oreTemporal");
-        UBCHelper.registerOreBlock(temporalOre, 0, "temporal", event);
-    }
-  
-    public static void ElectricalAge(FMLPreInitializationEvent event)
-    {
-        Block elnOreBlock = GameRegistry.findBlock("Eln", "Eln.Ore");
-        UBCHelper.registerOreBlock(elnOreBlock, 1, "copper", event);
-        String[] NAMES = {"lead", "tungsten", "elnCinnabar"};
-        for (int it = 0; it < NAMES.length; it++)
-        {
-            UBCHelper.registerOreBlock(elnOreBlock, it + 4, NAMES[it], event);
-        }
+    public static void Forestry() {
+        Ores[] ORES = {Ores.APATITE,Ores.COPPER,Ores.TIN};
+        UBCHelper.registerModOres("forestry","resources",0,1,ORES);
     }
 
-    public static void Factorization(FMLPreInitializationEvent event)
-    {
-        String[] BLOCKS = {"DarkIronOre", "ResourceBlock"};
-        String[] NAMES = {"darkiron", "silver"};
-        UBCHelper.registerModOresWithoutMeta("factorization", BLOCKS, NAMES, event);
+    public static void DeepResonance(){
+        UBCHelper.registerOreBlock("deepresonance","resonating_ore",Ores.RESONATING);
     }
 
-    public static void Farlanders(FMLPreInitializationEvent event)
-    {
-        Block FLOreBlock = GameRegistry.findBlock("farlanders", "Endumium Ore");
-        UBCHelper.registerOreBlock(FLOreBlock, 0, "endumium", event);
+    public static void BiomesOPlenty() {
+        Ores[] ORES = {Ores.RUBY, Ores.PERIDOT, Ores.TOPAZ, Ores.TANZANITE, Ores.MALACHITE,Ores.SAPPHIRE, Ores.AMBER};
+        UBCHelper.registerModOres("biomesoplenty","gem_ore",1,1,ORES);
     }
 
-    public static void FlaxSteampower(FMLPreInitializationEvent event)
-    {
-        String Ores[] = {"copper", "zinc"};
-        UBCHelper.registerModOresWithMeta("Steamcraft", "steamcraftOre", 0, 1, Ores, event);
-    }
-  
-    public static void FossilsAndArcheology(FMLPreInitializationEvent event)
-    {
-        String[] BLOCKS = {"amberOre", "fossil"};
-        String[] NAMES = {"faaAmber", "faaFossil"};
-        UBCHelper.registerModOresWithoutMeta("fossil", BLOCKS, NAMES, event);
-    }
-  
-    public static void GalactiCraft(FMLPreInitializationEvent event)
-    {
-        String Ores[] = {"copper", "tin", "aluminum", "silicon"};
-        UBCHelper.registerModOresWithMeta("GalacticraftCore", "tile.gcBlockCore", 5, 1, Ores, event);
+    public static void ImmersiveEngineering() {
+        Ores[] ORES = {Ores.COPPER, Ores.ALUMINUM, Ores.LEAD, Ores.SILVER, Ores.NICKEL, Ores.URANIUM};
+        UBCHelper.registerModOres("immersiveengineering","ore",0,1,ORES);
     }
 
-    public static void Harvestcraft(FMLPreInitializationEvent event)
-    {
-        Block HCOreBlock = GameRegistry.findBlock("harvestcraft", "salt");
-        UBCHelper.registerOreBlock(HCOreBlock, 0, "salt", event);
+    public static void BigReactors() {
+        Ores[] ORES = {Ores.YELLORITE};
+        UBCHelper.registerOreBlock("bigreactors","brore",Ores.YELLORITE);
     }
 
-    public static void IC2(FMLPreInitializationEvent event)
-    {
-        String[] BLOCKS = {"blockOreCopper", "blockOreTin", "blockOreLead", "blockOreUran"};
-        String[] NAMES = {"copper", "tin", "lead", "uranium"};
-        UBCHelper.registerModOresWithoutMeta("IC2", BLOCKS, NAMES, event);
+    public static void Embers() {
+        Ores[] ORES = {Ores.COPPER,Ores.LEAD,Ores.SILVER};
+        String[] BLOCKNAMES = {"oreCopper","oreLead","oreSilver"};
+        UBCHelper.registerModOres("embers", BLOCKNAMES, ORES);
     }
 
-    public static void IC2Classic(FMLPreInitializationEvent event)
-    {
-        String[] BLOCKS = {"uraniumOre", "tinOre", "copperOre"};
-        String[] NAMES = {"uranium", "tin", "copper"};
-        UBCHelper.registerModOresWithoutMeta("IC2", BLOCKS, NAMES, event);
-    }
-  
-    public static void JaffasAndMore(FMLPreInitializationEvent event)
-    {
-        String jaffasModName = "Jaffas-Technic";
-        Block jaffarrolOre = GameRegistry.findBlock(jaffasModName, "tile.jaffas.jaffarrolOre");
-        Block limsewOre = GameRegistry.findBlock(jaffasModName, "tile.jaffas.limsewOre");
-        // meta of 1 used to denote naturally spawned ore (drops xp orbs when mined)
-        UBCHelper.registerOreBlock(jaffarrolOre, 1, "jaffarrol", event);
-        UBCHelper.registerOreBlock(limsewOre, 0, "limsew", event);
+    public static void ArsMagica2() {
+        Ores[] ORES = {Ores.VINTEUM,Ores.CHIMERITE,Ores.BLUE_TOPAZ,Ores.MOONSTONE};
+        UBCHelper.registerModOres("arsmagica2","ore",0,1,ORES);
     }
 
-    public static void Mekanism(FMLPreInitializationEvent event)
-    {
-        String[] NAMES = {"osmium", "copper", "tin"};
-        UBCHelper.registerModOresWithMeta("Mekanism", "OreBlock", 0, 1, NAMES, event);
+    public static void Magneticraft() {
+        Ores[] ORES = {Ores.COPPER,Ores.LEAD,Ores.COBALT,Ores.TUNGSTEN};
+        UBCHelper.registerModOres("magneticraft","ore_block",0,1,ORES);
     }
 
-    public static void ProjectRed(FMLPreInitializationEvent event)
-    {
-        String[] NAMES = {"ruby", "sapphire", "peridot", "copper", "tin", "silver", "electrotine"};
-        UBCHelper.registerModOresWithMeta("ProjRed|Exploration", "projectred.exploration.ore", 0, 1, NAMES, null);
+    public static void DraconicEvolution() {
+        UBCHelper.registerOreBlock("draconicevolution","draconium_ore",Ores.DRACONIUM);
     }
 
-    public static void Railcraft(FMLPreInitializationEvent event)
-    {
-
-        Block RCOreBlock = GameRegistry.findBlock("Railcraft", "ore");
-        //UBCHelper.registerOreBlock(RCOreBlock, 0, "sulfur", event);
-        UBCHelper.registerOreBlock(RCOreBlock, 0, "railcraft", "ore.sulfur", "sulfur", event);
-
-        //Temporarily disabled due to Ores registering under the wrong Ore Dictionary Tag.
-        //String[] NAMES = {"Iron", "Gold", "Copper", "Tin", "Lead"};
-        //for(int Ore = 0; (Ore < NAMES.length); Ore++)
-        //{
-        //    UBCHelper.registerOreBlock(RCOreBlock, Ore + 7, "railcraft", "ore.poor." + NAMES[Ore].toLowerCase(), "poor" + NAMES[Ore], event);
-        //}
-
-    }
-  
-    public static void RFTools(FMLPreInitializationEvent event)
-    {
-        Block dimensionalShard = GameRegistry.findBlock("rftools", "dimensionalShardBlock");
-        UBCHelper.registerOreBlock(dimensionalShard, 0, "dimensionalShard", event);
+    public static void MysticalAgriculture() {
+        Ores[] ORES = {Ores.PROSPERITY,Ores.INFERIUM};
+        String[] BLOCKNAMES = {"prosperity_ore","inferium_ore"};
+        UBCHelper.registerModOres("mysticalagriculture",BLOCKNAMES,ORES);
     }
 
-    public static void Steamcraft2(FMLPreInitializationEvent event)
-    {
-        String[] NAMES = {"aluminum", "copper", "tin", "zinc", "uranite", "brimstone", "phosphate"};
-        UBCHelper.registerModOresWithMeta("steamcraft2", "BlockSteamcraftOre", 0, 1, NAMES, event);
-    }
-  
-    public static void TaintedMagic(FMLPreInitializationEvent event)
-    {
-        Block ShadowOreBlock = GameRegistry.findBlock("TaintedMagic", "OreShadow");
-        UBCHelper.registerOreBlock(ShadowOreBlock, 0, "shadow", event);
+    public static void Railcraft() {
+        Ores[] ORES = {Ores.COPPER,Ores.TIN,Ores.LEAD,Ores.SILVER};
+        UBCHelper.registerModOres("railcraft","ore",11,1,ORES);
+
     }
 
-    public static void ThermalFoundation(FMLPreInitializationEvent event)
-    {
-        String[] NAMES = {"copper", "tin", "silver", "lead", "ferrous", "shiny", "manainfused"};
-        UBCHelper.registerModOresWithMeta("ThermalFoundation", "Ore", 0, 1, NAMES, event);
+    public static void RailcraftPoorOres() {
+        Ores[] ORES = {Ores.POOR_IRON, Ores.POOR_GOLD, Ores.POOR_COPPER, Ores.POOR_TIN, Ores.POOR_LEAD,Ores.POOR_SILVER};
+        UBCHelper.registerModOres("railcraft","ore",5,1,ORES);
     }
 
-    public static void Thaumcraft(FMLPreInitializationEvent event)
-    {
-        String[] NAMES = {"cinnibar", "shardAir", "shardFire", "shardWater", "shardEarth", "shardOrder", "shardEntropy", "tcamber"};
-        UBCHelper.registerModOresWithMeta("Thaumcraft", "blockCustomOre", 0, 1, NAMES, event);
+    public static void Mekanism() {
+        Ores[] ORES = {Ores.OSMIUM,Ores.COPPER,Ores.TIN};
+        UBCHelper.registerModOres("mekanism","OreBlock",0,1,ORES);
     }
 
-    public static void Forestry(FMLPreInitializationEvent event)
-    {
-        String[] NAMES = {"apatite", "copper", "tin"};
-        UBCHelper.registerModOresWithMeta("Forestry", "resources", 0, 1, NAMES, event);
+    public static void SGCraft() {
+        UBCHelper.registerOreBlock("sgcraft","naquadahOre",Ores.NAQUADAH);
     }
 
-    /*public static void TConstruct(FMLPreInitializationEvent event)
-    {
-        String[] NAMES = {"copper", "tin", "aluminum"};
-        UBCHelper.registerModOresWithMeta("TConstruct", "SearedBrick", 3, 1, NAMES, event);
-    }*/
-
-    public static void BluePower(FMLPreInitializationEvent event)
-    {
-        String[] BLOCKS = {"teslatite_ore", "copper_ore", "silver_ore", "zinc_ore", "tungsten_ore", "ruby_ore", "sapphire_ore", "amethyst_ore"};
-        String[] NAMES = {"teslatite", "copper", "silver", "zinc", "tungsten", "ruby", "sapphire", "amethyst"};
-        UBCHelper.registerModOresWithoutMeta("bluepower", BLOCKS, NAMES, event);
+    public static void RFTools() {
+        UBCHelper.registerOreBlock("rftools","dimensional_shard_ore",Ores.DIMENSIONAL_SHARD);
     }
 
-    public static void ImmEng(FMLPreInitializationEvent event)
-    {
-        String[] NAMES = {"copper", "bauxite", "lead", "silver", "nickel"};
-        UBCHelper.registerModOresWithMeta("ImmersiveEngineering", "ore", 0, 1, NAMES, event);
+    public static void AdvancedRocketry() {
+        UBCHelper.registerOreBlock("libvulpes","ore0",Ores.DILITHIUM);
+        Ores[] ORES = {Ores.COPPER, Ores.TIN};
+        UBCHelper.registerModOres("libvulpes","ore0",4,1,ORES);
+        ORES = new Ores[] {Ores.TITANIUM, Ores.ALUMINUM, Ores.IRIDIUM};
+        UBCHelper.registerModOres("libvulpes","ore0",8,1,ORES);
+
     }
 
-    public static void ArsMag(FMLPreInitializationEvent event)
-    {
-        String[] NAMES = {"vinteum", "chimerite", "bluetopaz", "moonstone"};
-        UBCHelper.registerModOresWithMeta("arsmagica2", "vinteumOre", 0, 1, NAMES, null);
+    public static void ProjectRedExploration() {
+        Ores[] ORES = {Ores.RUBY, Ores.SAPPHIRE, Ores.PERIDOT, Ores.COPPER, Ores.TIN, Ores.SILVER, Ores.ELECTROTINE};
+        UBCHelper.registerModOres("projectred-exploration","ore",0,1,ORES);
     }
 
-    public static void DraconicEvolution(FMLPreInitializationEvent event)
-    {
-        Block BLOCK = GameRegistry.findBlock("DraconicEvolution", "draconiumOre");
-        UBCHelper.registerOreBlock(BLOCK, 0, "draconium", event);
+    public static void Crossroads() {
+        Ores[] ORES = {Ores.TIN, Ores.COPPER, Ores.NATIVE_COPPER};
+        String[] BLOCKNAMES = {"oreTin", "oreCopper", "oreNativeCopper"};
+        UBCHelper.registerModOres("crossroads",BLOCKNAMES,ORES);
     }
 
-    public static void Mariculture(FMLPreInitializationEvent event)
-    {
-        String[] NAMES = {"copper", "bauxite"};
-        UBCHelper.registerModOresWithMeta("Mariculture", "rocks", 1, 1, NAMES, event);
-    }
-    
-    public static void DeepResonance(FMLPreInitializationEvent event)
-    {
-        Block BLOCK = GameRegistry.findBlock("deepresonance", "oreResonating");
-        UBCHelper.registerOreBlock(BLOCK, 0, "resonatingore", event);
+    public static void TechReborn() {
+        Ores[] ORES = {Ores.GALENA, Ores.IRIDIUM, Ores.RUBY, Ores.SAPPHIRE, Ores.ALUMINUM};
+        UBCHelper.registerModOres("techreborn","techreborn.ore",0,1,ORES);
+        ORES = new Ores[] {Ores.LEAD,Ores.SILVER};
+        UBCHelper.registerModOres("techreborn","techreborn.ore",12,1,ORES);
+        ORES = new Ores[] {Ores.COPPER, Ores.TIN, Ores.NICKEL};
+        UBCHelper.registerModOres("techreborn","techreborn.ore2",0,1,ORES);
     }
 
-    public static void MagicalCrops(FMLPreInitializationEvent event)
-    {
-        Block magCropOre = GameRegistry.findBlock("magicalcrops", "magicalcrops_MinicioOre");
-        UBCHelper.registerOreBlock(magCropOre, 0, "minicio", null);
+    public static void BaseMetals() {
+        Ores[] ORES = {Ores.COPPER,Ores.LEAD,Ores.MERCURY,Ores.NICKEL, Ores.PLATINUM, Ores.SILVER, Ores.TIN, Ores.ZINC};
+        String[] BLOCKNAMES = {"copper_ore","lead_ore","mercury_ore","nickel_ore","platinum_ore","silver_ore","tin_ore","zinc_ore"};
+        UBCHelper.registerModOres("basemetals",BLOCKNAMES,ORES);
     }
 
+    public static void ModernMetals() {
+        Ores[] ORES = {Ores.ALUMINUM, Ores.CADMIUM, Ores.CHROMIUM, Ores.GALVANIZED_STEEL,Ores.IRIDIUM, Ores.MAGNESIUM, Ores.MANGANESE, Ores.NICHROME, Ores.OSMIUM,Ores.PLUTONIUM, Ores.TUNGSTEN, Ores.STAINLESS_STEEL, Ores.TANTALUM, Ores.TITANIUM, Ores.TUNGSTEN, Ores.URANIUM, Ores.ZIRCONIUM};
+        String[] BLOCKNAMES = {"aluminum_ore","cadmium_ore","chromium_ore","galvanizedsteel_ore","iridium_ore","magnesium_ore","manganese_ore","nichrome_ore","osmium_ore","plutonium_ore","rutile_ore","stainlesssteel_ore","tantalum_ore", "titanium_ore","tungsten_ore","uranium_ore","zirconium_ore"};
+        UBCHelper.registerModOres("modernmetals", BLOCKNAMES, ORES);
+    }
+
+    public static void Substratum() {
+        Ores[] ORES = {Ores.COPPER, Ores.TIN, Ores.NICKEL, Ores.ZINC, Ores.SILVER, Ores.LEAD, Ores.PLATINUM,Ores.ALUMINUM, Ores.CHROMIUM};
+        UBCHelper.registerModOres("substratum","ore",0,1,ORES);
+        ORES = new Ores[]{Ores.SULFUR,Ores.NITER};
+        UBCHelper.registerModOres("substratum","oreDust",0,1,ORES);
+    }
+
+    public static void UtilityBaseOres() {
+        Ores[] ORES = {Ores.FEATHER, Ores.BONE, Ores.ROTTEN, Ores.PRISMARINE, Ores.ENDER,Ores.SLIME, Ores.FLINT, Ores.CARROT, Ores.MELON, Ores.POTATO, Ores.CHICKEN, Ores.BEEF, Ores.PORKCHOP, Ores.FISH};
+        String[] BLOCKNAMES = {"feather_ore","bone_ore","rotten_ore","prismarine_ore","ender_ore","slime_ore","flint_ore","carrot_ore","melon_ore","potato_ore","chicken_ore","beef_ore","porkchop_ore","fish_ore"};
+        UBCHelper.registerModOres("utilitybaseores",BLOCKNAMES,ORES);
+    }
+
+    public static void Druidry() {
+        UBCHelper.registerOreBlock("druidry","silverore",Ores.SILVER);
+    }
+
+    public static void BetterAgriculture() {
+        UBCHelper.registerOreBlock("betteragriculture","slate_ore",Ores.SLATE);
+    }
+
+    public static void ActuallyAdditions() {
+        UBCHelper.registerOreBlock("actuallyadditions","blockMisck",3,Ores.BLACK_QUARTZ);
+    }
+
+    public static void ScalingHealth() {
+        UBCHelper.registerOreBlock("scalinghealth","CrystalOre",Ores.HEART_CRYSTAL);
+    }
+
+    public static void HardcoreORE() {
+        Ores[] ORES = {Ores.ALUMINUM, Ores.NICKEL, Ores.OSMIUM, Ores.ALUMINUM, Ores.TITANIUM, Ores.PLATINUM, Ores.YELLORITE, Ores.URANIUM, Ores.LEAD, Ores.ZINC, Ores.IRIDIUM, Ores.SILVER, Ores.COPPER, Ores.TIN};
+        String[] BLOCKNAMES = {"oreBauxite","oreNickel","oreOsmium","oreAluminum","oreTitanium","ore_platinum","oreYellorium","oreUranium","oreLead","ore_zinc","oreIridium","oreSilver","oreCopper","oreTin"};
+        UBCHelper.registerModOres("hardcoreore",BLOCKNAMES,ORES);
+    }
+
+    public static void TAIGA() {
+        Ores[] ORES = {Ores.DILITHIUM,Ores.VIBRANIUM};
+        String[] BLOCKNAMES = {"dilithium_ore","vibranium_ore"};
+        UBCHelper.registerModOres("taiga",BLOCKNAMES,ORES);
+
+        new ResourceLocation("a","b");
+    }
 }
