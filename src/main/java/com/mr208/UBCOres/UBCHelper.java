@@ -1,6 +1,8 @@
 package com.mr208.UBCOres;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.state.BlockStateBase;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.ResourceLocation;
 
 import exterminatorjeff.undergroundbiomes.api.UBBiome;
@@ -9,25 +11,11 @@ import exterminatorjeff.undergroundbiomes.intermod.StonesRegistry;
 
 public class UBCHelper {
 
-    UBBiome[] BIOME_LIST;
-
-    public static void registerStoneBlock(String MODID, String BLOCKNAME, int META)
-    {
-        Block STONEBLOCK = Block.getBlockFromName(MODID+":"+BLOCKNAME);
-        if(STONEBLOCK != null) {
-
-
-
-        } else {
-            Log.error("Skipping Stone: Unable to find Block for <"+MODID+":"+BLOCKNAME+":"+META+">");
-        }
-    }
-
-
     public static void registerOreBlock(String MODID, String BLOCKNAME, int meta, Ores ore)
     {
         Block OreBlock = Block.getBlockFromName(MODID+":"+BLOCKNAME);
         if(OreBlock!=null) {
+            Log.info("Registering Ore <"+MODID+":"+BLOCKNAME+":"+meta+">" + "with Unlocalized Name of: " + OreBlock.getUnlocalizedName());
             OresRegistry.INSTANCE.setupOre(OreBlock, meta);
             OresRegistry.INSTANCE.registerOreOverlay(OreBlock, meta, ore.getTexture());
         } else {
@@ -138,7 +126,7 @@ public class UBCHelper {
         TUNGSTEN("tungsten"),
         URANIUM("uranium"),
         VIBRANIUM("vibranium"),
-        VINTEUM("vintium"),
+        VINTEUM("vinteum"),
         YELLORITE("yellorite"),
         ZINC("zinc"),
         ZIRCONIUM("zirconium");
