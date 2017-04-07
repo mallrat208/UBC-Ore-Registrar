@@ -22,6 +22,10 @@ minecraft {
     version = "1.10.2-12.18.3.2239"
     runDir = "run"
 	mappings = "snapshot_20161111"
+	
+	replaceIn "References.java"
+	replace "@VERSION@", "${version}"
+	
 }
 repositories {
 
