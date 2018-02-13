@@ -41,7 +41,11 @@ public class Config {
     public static boolean SHOres;
     public static boolean HCOres;
     public static boolean TAIOres;
-
+    public static boolean TCOres;
+    public static boolean Wizardry;
+    public static boolean Evilcraft;
+    public static boolean Silents;
+    
     public static void init(File configFile)
     {
         if(config == null)
@@ -84,6 +88,10 @@ public class Config {
         SHOres = config.getBoolean("Scaling Health", "Mod Support", true, "Enables UBified versions of Scaling Health Ores. (Heart Crystal)");
         HCOres = config.getBoolean("Hardcore ORE", "Mod Support", true, "Enables UBified versions of HardcoreOREs Ores. ()");
         TAIOres = config.getBoolean("TAIGA", "Mod Support", true, "Enables UBified versions of select TAIGA Ores (Dilithium, Vibranium)");
+        TCOres = config.getBoolean("Thaumcraft", "Mod Support", true, "Enables UBified versions of Thaumcraft Amber, Cinnabar, and Quartz");
+        Wizardry = config.getBoolean("Wizardry", "Mod Support", true, "Enables UBified versions of Wizardy Crystal Ore");
+        Evilcraft = config.getBoolean("Evilcraft", "Mod Support", true, "Enables UBified versions of Evilcraft Dark Ore");
+        Silents = config.getBoolean("Silent Gems", "Mod Support", true, "Enables UBified versions of the Overworld Gems");
 
         if (config.hasChanged())
         {

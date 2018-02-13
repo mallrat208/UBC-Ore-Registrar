@@ -26,5 +26,9 @@ public class References {
                                                 "after:basemetals;" +
                                                 "after:modernmetals;" +
                                                 "after:substratum;" +
-                                                "after:utilitybaseores";
+                                                "after:utilitybaseores;" +
+                                                "after:thaumcraft;" +
+                                                "after:wizardry;" +
+                                                "after:evilcraft;" +
+                                                "after:silentgems";
 }

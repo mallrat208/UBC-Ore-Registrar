@@ -1,5 +1,6 @@
 package com.mr208.UBCOres;
 
+import net.minecraftforge.event.world.ChunkEvent.Load;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
@@ -38,5 +39,9 @@ public class CommonProxy {
 		if(Loader.isModLoaded("scalinghealth") && Config.SHOres) Mods.ScalingHealth();
 		if(Loader.isModLoaded("hardcoreore") && Config.HCOres) Mods.HardcoreORE();
 		if(Loader.isModLoaded("taiga") && Config.TAIOres) Mods.TAIGA();
+		if(Loader.isModLoaded("thaumcraft") && Config.TCOres) Mods.Thaumcraft();
+		if(Loader.isModLoaded("wizardry") && Config.Wizardry) Mods.Wizardry();
+		if(Loader.isModLoaded("evilcraft") && Config.Evilcraft) Mods.Evilcraft();
+		if(Loader.isModLoaded("silentgems") && Config.Silents) Mods.SilentsGems();
 	}
 }

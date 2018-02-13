@@ -171,7 +171,29 @@ public class Mods {
         Ores[] ORES = {Ores.DILITHIUM,Ores.VIBRANIUM};
         String[] BLOCKNAMES = {"dilithium_ore","vibranium_ore"};
         UBCHelper.registerModOres("taiga",BLOCKNAMES,ORES);
-
-        new ResourceLocation("a","b");
+    }
+    
+    public static void Thaumcraft() {
+        Ores[] ORES = {Ores.AMBER_TC, Ores.CINNABAR_TC, Ores.QUARTZ};
+        String[] BLOCKNAMES = {"ore_amber", "ore_cinnabar", "ore_quartz"};
+        UBCHelper.registerModOres("thaumcraft", BLOCKNAMES, ORES);
+    }
+    
+    public static void Wizardry() {
+        UBCHelper.registerOreBlock("wizardry", "crystal_ore", Ores.CRYSTAL);
+    }
+    
+    public static void Evilcraft() {
+        UBCHelper.registerOreBlock("evilcraft", "darkOre", Ores.DARK);
+    }
+    
+    public static void SilentsGems(){
+        Ores[] ORES = {Ores.SIMPLE_RUBY, Ores.SIMPLE_GARNET, Ores.SIMPLE_TOPAZ,
+                Ores.SIMPLE_AMBER, Ores.SIMPLE_HELIODOR, Ores.SIMPLE_PERIDOT,
+                Ores.SIMPLE_BERYL, Ores.SIMPLE_INDICOLITE, Ores.SIMPLE__AQUAMARINE,
+                Ores.SIMPLE_SAPPHIRE9, Ores.SIMPLE_IOLITE, Ores.SIMPLE_AMETHYST,
+                Ores.SIMPLE_AGATE, Ores.SIMPLE_MORGANITE, Ores.SIMPLE_ONYX,
+                Ores.SIMPLE_OPAL};
+        UBCHelper.registerModOres("silentgems", "gemore", 0,1, ORES);
     }
 }

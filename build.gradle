@@ -9,17 +9,17 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "2.1.0"
+version = "2.2.0"
 group= "com.mr208.UBCOres" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "UBCOres"
 
-sourceCompatibility = targetCompatibility = "1.7" // Need this here so eclipse task generates correctly.
+sourceCompatibility = targetCompatibility = "1.8" // Need this here so eclipse task generates correctly.
 compileJava {
-    sourceCompatibility = targetCompatibility = "1.7"
+    sourceCompatibility = targetCompatibility = "1.8"
 }
 
 minecraft {
-    version = "1.10.2-12.18.3.2239"
+    version = "1.10.2-12.18.3.2511"
     runDir = "run"
 	mappings = "snapshot_20161111"
 	
